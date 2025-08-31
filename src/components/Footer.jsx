@@ -24,7 +24,7 @@ export default function Footer() {
           <h3 className="text-lg font-bold mb-2 border-b-2 border-red-700 inline-block">
             LINKS
           </h3>
-          <ul className="mt-3 space-y-2 text-gray-700">
+          <ul className="mt-3 space-y-2 text-gray-700 font-poppins">
             <li>
               <NavLink
                 to="/"

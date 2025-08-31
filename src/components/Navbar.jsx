@@ -25,7 +25,7 @@ export default function Navbar() {
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
-                                `relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
+                                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
                                 }`
                             }
                         >
@@ -37,7 +37,7 @@ export default function Navbar() {
                         <NavLink
                             to="/about"
                             className={({ isActive }) =>
-                                `relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
+                                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
                                 }`
                             }
                         >
@@ -52,7 +52,7 @@ export default function Navbar() {
                             onMouseLeave={() => setProductsOpen(false)}
                         >
                             <button className="relative flex items-center text-[#b14e47] font-medium uppercase tracking-wider hover:text-[#AB2E26] cursor-pointer group">
-                                Products
+                                <span className="font-poppins">Products</span>
                                 <ChevronDown
                                     className={`ml-1 w-4 h-4 transform transition-transform duration-300 ${productsOpen ? "rotate-180" : ""
                                         }`}
@@ -121,7 +121,7 @@ export default function Navbar() {
                         <NavLink
                             to="/contact"
                             className={({ isActive }) =>
-                                `relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
+                                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
                                 }`
                             }
                         >
@@ -151,7 +151,7 @@ export default function Navbar() {
                  text-white px-6 py-3 rounded-3xl uppercase font-medium 
                  bg-[#AB2E26]">
 
-                                <span className="relative z-10 transition-colors duration-500 group-hover:text-[#AB2E26] tracking-wide">
+                                <span className="font-poppins relative z-10 transition-colors duration-500 group-hover:text-[#AB2E26] tracking-wide">
                                     Download Catalogue
                                 </span>
                                 <span className="absolute left-0 top-0 h-full w-0 bg-[#FFF2BF] 
@@ -182,14 +182,14 @@ export default function Navbar() {
                         <NavLink
                             to="/"
                             onClick={() => setIsOpen(false)}
-                            className="block px-3 py-3 mx-3 text-[#777777] font-bold uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition border-b-1 border-gray-200 border-t-1"
+                            className="font-poppins block px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition border-b-1 border-gray-200 border-t-1"
                         >
                             Home
                         </NavLink>
                         <NavLink
                             to="/about"
                             onClick={() => setIsOpen(false)}
-                            className="block px-3 py-3 mx-3 text-[#777777] font-bold uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition border-b-1 border-gray-200"
+                            className="font-poppins block px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition border-b-1 border-gray-200"
                         >
                             About Us
                         </NavLink>
@@ -198,7 +198,7 @@ export default function Navbar() {
                         <div>
                             <button
                                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                                className="w-full flex justify-between items-center px-3 py-3 mx-3 text-[#777777] font-bold uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition border-b-1 border-gray-200"
+                                className="font-poppins w-full flex justify-between items-center px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition border-b-1 border-gray-200"
                             >
                                 Products
                                 <ChevronDown
@@ -265,7 +265,7 @@ export default function Navbar() {
 
                         <NavLink
                             to="/contact"
-                            className="block px-3 py-3 mx-3 text-[#777777] font-bold uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition"
+                            className="font-poppins block px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition"
                         >
                             Contact Us
                         </NavLink>
@@ -282,7 +282,7 @@ export default function Navbar() {
                  bg-[#AB2E26]"
                                 >
                                     {/* Button Text */}
-                                    <span className="relative z-10 transition-colors duration-500 group-hover:text-[#AB2E26]">
+                                    <span className="font-poppins relative z-10 transition-colors duration-500 group-hover:text-[#AB2E26]">
                                         Download Catalogue
                                     </span>
 
