@@ -161,7 +161,7 @@ export default function WhyChooseUs() {
         <section className="py-20 bg-gradient-to-b from-[#f8f4ea] via-[#f6f1e1] to-[#f8efde] mt-4 font-poppins">
             <div className="max-w-7xl mx-auto px-6 lg:px-20 text-center">
                 {/* Heading */}
-                <h2 className="text-3xl md:text-5xl font-bold text-[#AB2E26] -mt-3">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#AB2E26] -mt-3">
                     Why Choose Us
                 </h2>
                 <div className="mt-2 w-20 h-1 bg-[#AB2E26] mx-auto rounded-full"></div>
