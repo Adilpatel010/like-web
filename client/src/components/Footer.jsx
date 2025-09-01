@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/img/lemarks_logo.png";
+import {Instagram,Facebook} from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#fdf6e3]">
-      <div className="max-w-7xl mx-auto md:px-20 px-3 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-[#FBF4DB] font-poppins">
+      <div className="max-w-7xl mx-auto md:px-20 px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
 
         {/* Logo & About */}
         <div>
@@ -17,12 +18,26 @@ export default function Footer() {
             was established almost two decades ago, and is presently operating
             in Navi Mumbai, Maharashtra State of India.
           </p>
+          <div className="mt-5 flex flex-row gap-3">
+      <a
+        href="#"
+        className="flex items-center justify-center w-10 h-10 rounded-full text-black shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-lg"
+      >
+        <Instagram className="w-6 h-6" />
+      </a>
+      <a
+        href="#"
+        className="flex items-center justify-center w-10 h-10 rounded-full text-black shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-lg"
+      >
+        <Facebook className="w-6 h-6" />
+      </a>
+    </div>
         </div>
 
         {/* Links */}
         <div>
-          <h3 className="text-lg font-bold mb-2 border-b-2 border-red-700 inline-block">
-            LINKS
+          <h3 className="text-lg font-bold mb-2 inline-block">
+             <span className="border-b-2 border-[#AB2E26] pb-1">LIN</span>KS
           </h3>
           <ul className="mt-3 space-y-2 text-gray-700 font-poppins">
             <li>
@@ -70,8 +85,8 @@ export default function Footer() {
 
         {/* Products */}
         <div>
-          <h3 className="text-lg font-bold mb-2 border-b-2 border-red-700 inline-block">
-            PRODUCTS
+          <h3 className="text-lg font-bold mb-2 inline-block">
+            <span className="border-b-2 border-[#AB2E26] pb-1">PRO</span>DUCTS
           </h3>
           <ul className="mt-3 space-y-2 text-gray-700">
             <li><NavLink to="/products/ovens" className="hover:text-red-700">Ovens</NavLink></li>
@@ -86,8 +101,8 @@ export default function Footer() {
 
         {/* Reach Us */}
         <div>
-          <h3 className="text-lg font-bold mb-2 border-b-2 border-red-700 inline-block">
-            REACH US
+          <h3 className="text-lg font-bold mb-2 inline-block">
+           <span className="border-b-2 border-[#AB2E26] pb-1"> REA</span>CH US
           </h3>
           <div className="mt-3">
             <iframe

@@ -288,7 +288,7 @@ export default function Navbar() {
                             >
                                 <button
                                     className="relative w-52 overflow-hidden group text-sm cursor-pointer
-                 text-white px-4 py-3 rounded-4xl uppercase font-medium 
+                 text-white px-4 py-3 mb-4 rounded-4xl uppercase font-medium 
                  bg-[#AB2E26]"
                                 >
                                     {/* Button Text */}
