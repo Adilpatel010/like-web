@@ -182,14 +182,20 @@ export default function Navbar() {
                         <NavLink
                             to="/"
                             onClick={() => setIsOpen(false)}
-                            className="font-poppins block px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition border-b-1 border-gray-200 border-t-1"
+                            className={({ isActive }) =>
+                                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] border-b-1 border-gray-200 border-t-1 transition ${isActive ? "text-[#AB2E26]" : "text-[#777777] hover:text-[#AB2E26] hover:bg-gray-100"
+                                }`
+                            }
                         >
                             Home
                         </NavLink>
                         <NavLink
                             to="/about"
                             onClick={() => setIsOpen(false)}
-                            className="font-poppins block px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition border-b-1 border-gray-200"
+                            className={({ isActive }) =>
+                                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] border-b-1 border-gray-200 transition ${isActive ? "text-[#AB2E26]" : "text-[#777777] hover:text-[#AB2E26] hover:bg-gray-100"
+                                }`
+                            }
                         >
                             About Us
                         </NavLink>
@@ -265,7 +271,11 @@ export default function Navbar() {
 
                         <NavLink
                             to="/contact"
-                            className="font-poppins block px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition"
+                            onClick={() => setIsOpen(false)}
+                            className={({ isActive }) =>
+                                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] transition ${isActive ? "text-[#AB2E26]" : "text-[#777777] hover:text-[#AB2E26] hover:bg-gray-100"
+                                }`
+                            }
                         >
                             Contact Us
                         </NavLink>

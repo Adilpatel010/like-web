@@ -250,8 +250,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
-import Home from './pages/home/Home'
+import Home from './pages/home/index'
 import About from './pages/about/About'
+import './assets/css/slider.css'
+
 
 const App = () => {
   return (
