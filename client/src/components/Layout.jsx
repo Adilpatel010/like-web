@@ -19,6 +19,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from './Navbar'
 import Footer from './Footer'
+import Catalog from "../pages/home/Catalog";
 
 const Layout = () => {
     return (
@@ -28,7 +29,7 @@ const Layout = () => {
             <main className="flex-grow pt-20">
                 <Outlet />
             </main>
-            
+            <Catalog />
             <Footer />
         </div>
     );

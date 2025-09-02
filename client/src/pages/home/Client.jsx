@@ -115,7 +115,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-export default function ClientReviews() {
+const Client = () => {
     return (
         <section className="py-12 px-4 lg:px-20 bg-gray-100 font-poppins">
             <div className="max-w-6xl mx-auto text-center px-2">
@@ -248,9 +248,8 @@ export default function ClientReviews() {
                                 <Star key={i} className="w-5 h-5 text-[#FDC700] fill-[#FDC700]" />
                             ))}
                         </div>
-                        <p className="italic text-gray-700">
-                            "Lemarks bakery ovens are incredibly reliable. Heat distribution is
-                            perfect, and the results are always consistent."
+                        <p className="italic text-gray-700 pb-12">
+                            "Good Quality Bakery Equipment products and Services......"
                         </p>
                         <p className="mt-4 text-sm font-semibold text-[#AB2E26]">
                             GOOGLE REVIEW
@@ -313,3 +312,4 @@ export default function ClientReviews() {
         </section>
     );
 }
+export default Client; 
