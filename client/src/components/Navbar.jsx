@@ -25,7 +25,7 @@ export default function Navbar() {
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
-                                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
+                                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "font-semibold text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
                                 }`
                             }
                         >
@@ -37,7 +37,7 @@ export default function Navbar() {
                         <NavLink
                             to="/about"
                             className={({ isActive }) =>
-                                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
+                                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "font-semibold text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
                                 }`
                             }
                         >
@@ -51,17 +51,22 @@ export default function Navbar() {
                             onMouseEnter={() => setProductsOpen(true)}
                             onMouseLeave={() => setProductsOpen(false)}
                         >
-                            <button className="relative flex items-center text-[#b14e47] font-medium uppercase tracking-wider hover:text-[#AB2E26] cursor-pointer group">
-                                <span className="font-poppins">
-                                    <NavLink to="/products">
-                                        Products
-                                    </NavLink></span>
+                            {/* Parent Products Link */}
+                            <NavLink
+                                to="/products"
+                                className={({ isActive }) =>
+                                    `relative flex items-center font-poppins font-medium uppercase tracking-wider cursor-pointer group ${isActive ? "font-semibold text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
+                                    }`
+                                }
+                            >
+                                <span>Products</span>
                                 <ChevronDown
                                     className={`ml-1 w-4 h-4 transform transition-transform duration-300 ${productsOpen ? "rotate-180" : ""
-                                        }`}
+                                    }`}
                                 />
+                                {/* underline effect */}
                                 <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-[#AB2E26] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
-                            </button>
+                            </NavLink>
 
                             {/* Dropdown */}
                             <AnimatePresence>
@@ -75,43 +80,78 @@ export default function Navbar() {
                                     >
                                         <NavLink
                                             to="/products/ovens"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 transition ${isActive
+                                                    ? "bg-[#FFFBE6] text-[#AB2E26] font-semibold"
+                                                    : "text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6]"
+                                                }`
+                                            }
                                         >
                                             Ovens
                                         </NavLink>
                                         <NavLink
                                             to="/products/mixers"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 transition ${isActive
+                                                    ? "bg-[#FFFBE6] text-[#AB2E26] font-semibold"
+                                                    : "text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6]"
+                                                }`
+                                            }
                                         >
                                             Mixers
                                         </NavLink>
                                         <NavLink
                                             to="/products/dough-sheeter"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 transition ${isActive
+                                                    ? "bg-[#FFFBE6] text-[#AB2E26] font-semibold"
+                                                    : "text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6]"
+                                                }`
+                                            }
                                         >
                                             Dough Sheeter
                                         </NavLink>
                                         <NavLink
                                             to="/products/dough-series"
-                                            className="block px-4 py-2 text-[#b14e47]  hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 transition ${isActive
+                                                    ? "bg-[#FFFBE6] text-[#AB2E26] font-semibold"
+                                                    : "text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6]"
+                                                }`
+                                            }
                                         >
                                             Dough Series
                                         </NavLink>
                                         <NavLink
                                             to="/products/kitchen-equipments"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 transition ${isActive
+                                                    ? "bg-[#FFFBE6] text-[#AB2E26] font-semibold"
+                                                    : "text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6]"
+                                                }`
+                                            }
                                         >
                                             Kitchen Equipments
                                         </NavLink>
                                         <NavLink
                                             to="/products/showcases"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 transition ${isActive
+                                                    ? "bg-[#FFFBE6] text-[#AB2E26] font-semibold"
+                                                    : "text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6]"
+                                                }`
+                                            }
                                         >
                                             Showcases
                                         </NavLink>
                                         <NavLink
                                             to="/products/all-accessories"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 transition ${isActive
+                                                    ? "bg-[#FFFBE6] text-[#AB2E26] font-semibold"
+                                                    : "text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6]"
+                                                }`
+                                            }
                                         >
                                             All Accessories
                                         </NavLink>
@@ -124,7 +164,7 @@ export default function Navbar() {
                         <NavLink
                             to="/contact"
                             className={({ isActive }) =>
-                                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
+                                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive ? "font-semibold text-[#AB2E26]" : "text-[#b14e47] hover:text-[#AB2E26]"
                                 }`
                             }
                         >
@@ -134,16 +174,6 @@ export default function Navbar() {
                     </div>
 
                     {/* Catalogue Button (Desktop only) */}
-                    {/* <div className="hidden md:block">
-                        <a
-                            href="/Lemarks-Catalogue.pdf"
-                             target="_blank"
-                             rel="noopener noreferrer">
-                            <button className="bg-[#AB2E26] text-sm cursor-pointer text-white px-6 py-3 rounded-4xl hover:bg-[#FFF2BF] hover:text-[#AB2E26] transition-colors duration-100 uppercase font-medium">
-                                Download Catalogue
-                            </button></a>
-                    </div> */}
-
                     <div className="hidden md:block">
                         <a
                             href="/Lemarks-Catalogue.pdf"
@@ -186,7 +216,7 @@ export default function Navbar() {
                             to="/"
                             onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
-                                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] border-b-1 border-gray-200 border-t-1 transition ${isActive ? "text-[#AB2E26]" : "text-[#777777] hover:text-[#AB2E26] hover:bg-gray-100"
+                                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] border-b-1 border-gray-200 border-t-1 transition ${isActive ? "font-semibold text-[#AB2E26]" : "text-[#777777] hover:text-[#AB2E26] hover:bg-gray-100"
                                 }`
                             }
                         >
@@ -196,7 +226,7 @@ export default function Navbar() {
                             to="/about"
                             onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
-                                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] border-b-1 border-gray-200 transition ${isActive ? "text-[#AB2E26]" : "text-[#777777] hover:text-[#AB2E26] hover:bg-gray-100"
+                                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] border-b-1 border-gray-200 transition ${isActive ? "font-semibold text-[#AB2E26]" : "text-[#777777] hover:text-[#AB2E26] hover:bg-gray-100"
                                 }`
                             }
                         >
@@ -205,17 +235,35 @@ export default function Navbar() {
 
                         {/* Mobile Dropdown */}
                         <div>
-                            <button
-                                onClick={() => setDropdownOpen(!dropdownOpen)}
-                                className="font-poppins w-full flex justify-between items-center px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition border-b-1 border-gray-200"
-                            >
-                                Products
-                                <ChevronDown
-                                    className={`ml-2 w-4 h-4 mr-3 transform transition-transform duration-300 ${dropdownOpen ? "rotate-180" : ""
-                                        }`}
-                                />
-                            </button>
+                            <div className="flex justify-between items-center border-b border-gray-200">
+                                <NavLink
+                                    to="/products"
+                                    onClick={() => {
+                                        setIsOpen(false);
+                                        setDropdownOpen(false);
+                                    }}
+                                    className={({ isActive }) =>
+                                        `font-poppins flex-1 px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-[#AB2E26] hover:bg-gray-100 transition ${isActive ? "text-[#AB2E26] font-semibold" : ""
+                                        }`
+                                    }
+                                >
+                                    Products
+                                </NavLink>
 
+                                {/* Chevron (arrow toggle) */}
+                                <button
+                                    type="button"
+                                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                                    className="px-3 py-3 mr-3 text-[#777777] hover:text-[#AB2E26] transition"
+                                >
+                                    <ChevronDown
+                                        className={`w-4 h-4 transform transition-transform duration-300 ${dropdownOpen ? "rotate-180 text-[#AB2E26]" : ""
+                                            }`}
+                                    />
+                                </button>
+                            </div>
+
+                            {/* Submenu */}
                             <AnimatePresence>
                                 {dropdownOpen && (
                                     <motion.div
@@ -227,43 +275,98 @@ export default function Navbar() {
                                     >
                                         <NavLink
                                             to="/products/ovens"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            onClick={() => {
+                                                setIsOpen(false);
+                                                setDropdownOpen(false);
+                                            }}
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition ${isActive ? "font-semibold text-[#AB2E26]" : ""
+                                                }`
+                                            }
                                         >
                                             Ovens
                                         </NavLink>
+
                                         <NavLink
                                             to="/products/mixers"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            onClick={() => {
+                                                setIsOpen(false);
+                                                setDropdownOpen(false);
+                                            }}
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition ${isActive ? "font-semibold text-[#AB2E26]" : ""
+                                                }`
+                                            }
                                         >
                                             Mixers
                                         </NavLink>
+
                                         <NavLink
                                             to="/products/dough-sheeter"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            onClick={() => {
+                                                setIsOpen(false);
+                                                setDropdownOpen(false);
+                                            }}
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition ${isActive ? "font-semibold text-[#AB2E26]" : ""
+                                                }`
+                                            }
                                         >
                                             Dough Sheeter
                                         </NavLink>
+
                                         <NavLink
                                             to="/products/dough-series"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            onClick={() => {
+                                                setIsOpen(false);
+                                                setDropdownOpen(false);
+                                            }}
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition ${isActive ? "font-semibold text-[#AB2E26]" : ""
+                                                }`
+                                            }
                                         >
                                             Dough Series
                                         </NavLink>
+
                                         <NavLink
                                             to="/products/kitchen-equipments"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            onClick={() => {
+                                                setIsOpen(false);
+                                                setDropdownOpen(false);
+                                            }}
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition ${isActive ? "font-semibold text-[#AB2E26]" : ""
+                                                }`
+                                            }
                                         >
                                             Kitchen Equipments
                                         </NavLink>
+
                                         <NavLink
                                             to="/products/showcases"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            onClick={() => {
+                                                setIsOpen(false);
+                                                setDropdownOpen(false);
+                                            }}
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition ${isActive ? "font-semibold text-[#AB2E26]" : ""
+                                                }`
+                                            }
                                         >
                                             Showcases
                                         </NavLink>
+
                                         <NavLink
                                             to="/products/all-accessories"
-                                            className="block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition"
+                                            onClick={() => {
+                                                setIsOpen(false);
+                                                setDropdownOpen(false);
+                                            }}
+                                            className={({ isActive }) =>
+                                                `block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition ${isActive ? "font-semibold text-[#AB2E26]" : ""
+                                                }`
+                                            }
                                         >
                                             All Accessories
                                         </NavLink>
@@ -276,7 +379,7 @@ export default function Navbar() {
                             to="/contact"
                             onClick={() => setIsOpen(false)}
                             className={({ isActive }) =>
-                                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] transition ${isActive ? "text-[#AB2E26]" : "text-[#777777] hover:text-[#AB2E26] hover:bg-gray-100"
+                                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] transition ${isActive ? "font-semibold text-[#AB2E26]" : "text-[#777777] hover:text-[#AB2E26] hover:bg-gray-100"
                                 }`
                             }
                         >
