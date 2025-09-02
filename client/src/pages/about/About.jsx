@@ -1,31 +1,25 @@
 import React from "react";
-import { ArrowUpRight } from "lucide-react";
 import about from '../../assets/img/1.png';
-import { NavLink } from "react-router-dom";
 
 const About = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <>
-      <div className='px-6 py-10 bg-amber-50 font-poppins'>
+      <div className='px-6 py-10 bg-gradient-to-t from-[#efeeea] to-[#fdfbf3] font-poppins'>
         <h2 className='max-w-7xl mx-auto text-center text-[#AB2E26] text-3xl md:text-5xl font-semibold'>About Lemarks Industries</h2>
         <div className="mt-3 w-22 md:w-30 h-1 bg-[#AB2E26] mx-auto rounded-full"></div>
-        <p className='text-gray-600 mt-6 md:px-28 md:text-center text-justify'>Welcome to Lemarkz, your trusted destination for high-quality bakery and kitchen equipment. At Lemarkz, we are committed to delivering excellence in every product, ensuring that your culinary creations are powered by reliability and innovation.</p>
+        <p className='text-gray-600 mt-6 md:px-43 md:text-center text-justify text-md'>Welcome to Lemarkz, your trusted destination for high-quality bakery and kitchen equipment. At Lemarkz, we are committed to delivering excellence in every product, ensuring that your culinary creations are powered by reliability and innovation.</p>
       </div>
 
-
-      <section className="w-full bg-white py-5 px-6 md:px-12 lg:px-20">
+      <section className="w-full bg-white py-10 px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center font-poppins">
-          {/* Right Images */}
           <div className="relative flex flex-col items-center md:items-center space-y-4">
-            {/* Top Image */}
             <img
               src={about}
               alt="Mixer"
-              className="h-100 object-cover"
+              className="h-80 object-cover"
             />
           </div>
-          {/* Left Content */}
           <div>
             <h3 className="text-[#AB2E26] font-bold text-2xl mt-4">Welcome To</h3>
             <h2 className="text-3xl md:text-4xl border-l-5 border-[#AB2E26] pl-3 text-black mt-1">
@@ -47,29 +41,37 @@ const About = () => {
             <p className="text-gray-700 mt-4 leading-relaxed">
               Geneva Enterprise Pvt. Ltd. (Lemarkz Industries Kitchen Equipments, Caterbell Industries & Noofast Impex) has wide ranges of bakery & kitchen equipments products.
             </p>
+          </div>
+        </div>
+      </section>
 
-            {/* Button */}
-            <NavLink to="/about">
-              <button className="cursor-pointer font-medium mt-6 group relative flex items-center gap-2 px-6 py-3 bg-[#AB2E26] text-white rounded-3xl overflow-hidden transition-colors duration-300 hover:bg-[#FFF2BF] hover:text-[#AB2E26]">
+      <section className="w-full bg-gradient-to-t from-[#fdfbf3] to-[#efeeea] py-12 px-6 md:px-12 lg:px-20 font-poppins">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 uppercase">
 
-                {/* Text that shifts to the right */}
-
-                <span className="tracking-wider transform transition-transform duration-300 group-hover:translate-x-5">
-                  READ MORE
-                </span>
-
-                {/* Arrow that slides in from the left */}
-                <ArrowUpRight
-                  className="w-5 h-5 transform -translate-x-1 transition-all duration-300 group-hover:-translate-x-28 group-hover:opacity-100"
-                />
-              </button>
-            </NavLink>
+          <div className="group bg-white shadow-lg rounded-2xl p-8 border-t-4 border-[#AB2E26] hover:shadow-xl hover:bg-[#AB2E26] transition-all duration-500">
+            <h3 className="text-2xl font-bold text-[#AB2E26] mb-4 group-hover:text-white transition-colors duration-500">
+              Our Mission
+            </h3>
+            <p className="text-gray-700 leading-relaxed text-sm md:text-base group-hover:text-white transition-colors duration-500">
+              To deliver the best possible customer service, excellent quality &
+              most advanced products.
+            </p>
           </div>
 
+          <div className="group bg-white shadow-lg rounded-2xl p-8 border-t-4 border-[#AB2E26] hover:shadow-xl hover:bg-[#AB2E26] transition-all duration-500">
+            <h3 className="text-2xl font-bold text-[#AB2E26] mb-4 group-hover:text-white transition-colors duration-500">
+              Our Vision
+            </h3>
+            <p className="text-gray-700 leading-relaxed text-sm md:text-base group-hover:text-white transition-colors duration-500">
+              To pursue excellence in product development and support services.
+            </p>
+          </div>
 
         </div>
-      </section >
-      <hr className="w-full text-[#f9a59f] mt-10" />
+      </section>
+
+
+
     </>
   )
 }

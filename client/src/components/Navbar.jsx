@@ -52,7 +52,10 @@ export default function Navbar() {
                             onMouseLeave={() => setProductsOpen(false)}
                         >
                             <button className="relative flex items-center text-[#b14e47] font-medium uppercase tracking-wider hover:text-[#AB2E26] cursor-pointer group">
-                                <span className="font-poppins">Products</span>
+                                <span className="font-poppins">
+                                    <NavLink to="/products">
+                                        Products
+                                    </NavLink></span>
                                 <ChevronDown
                                     className={`ml-1 w-4 h-4 transform transition-transform duration-300 ${productsOpen ? "rotate-180" : ""
                                         }`}

@@ -29,7 +29,7 @@ export default function Home() {
                         <img
                             src={src}
                             alt={`slide-${i}`}
-                            className="w-full h-[400px] md:h-[470px]"
+                            className="w-full h-[175px] md:h-[470px] object-contain md:object-fill"
                         />
                     </SwiperSlide>
                 ))}

@@ -9,3 +9,9 @@
   background: #8a5802 !important;
   opacity: 1;
 }
+
+@media only screen and (max-width:768px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
