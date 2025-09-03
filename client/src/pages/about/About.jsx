@@ -12,6 +12,7 @@ const About = () => {
       </div>
 
       <section className="w-full bg-white py-10 px-6 md:px-12 lg:px-20">
+         <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center font-poppins">
           <div className="relative flex flex-col items-center md:items-center space-y-4">
             <img
@@ -42,6 +43,7 @@ const About = () => {
               Geneva Enterprise Pvt. Ltd. (Lemarkz Industries Kitchen Equipments, Caterbell Industries & Noofast Impex) has wide ranges of bakery & kitchen equipments products.
             </p>
           </div>
+        </div>
         </div>
       </section>
 

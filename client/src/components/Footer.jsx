@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/img/lemarks_logo.png";
-import {Instagram,Facebook} from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -10,34 +10,34 @@ export default function Footer() {
         {/* Logo & About */}
         <div>
           <div className="flex items-center space-x-2 mb-4">
-             <img src={logo} alt="Logo" className="w-25 md:w-32 -mt-3 -ml-2" />
-             <span className="text-2xl font-bold text-red-700"></span>
-           </div>
+            <img src={logo} alt="Logo" className="w-25 md:w-32 -mt-3 -ml-2" />
+            <span className="text-2xl font-bold text-red-700"></span>
+          </div>
           <p className="mt-4 text-gray-700 text-sm leading-relaxed">
             Geneva Enterprise Pvt. Ltd. (Lemarkz Industries Kitchen Equipments)
             was established almost two decades ago, and is presently operating
             in Navi Mumbai, Maharashtra State of India.
           </p>
           <div className="mt-5 flex flex-row gap-3">
-      <a
-        href="#"
-        className="flex items-center justify-center w-10 h-10 rounded-full text-black shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-lg"
-      >
-        <Instagram className="w-6 h-6" />
-      </a>
-      <a
-        href="#"
-        className="flex items-center justify-center w-10 h-10 rounded-full text-black shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-lg"
-      >
-        <Facebook className="w-6 h-6" />
-      </a>
-    </div>
+            <a
+              href="https://www.instagram.com/adil_patel_010" target="_blank"
+              className="flex items-center justify-center w-10 h-10 rounded-full text-black shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-lg"
+            >
+              <Instagram className="w-6 h-6" />
+            </a>
+            <a
+              href="#"
+              className="flex items-center justify-center w-10 h-10 rounded-full text-black shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-lg"
+            >
+              <Facebook className="w-6 h-6" />
+            </a>
+          </div>
         </div>
 
         {/* Links */}
         <div>
           <h3 className="text-lg font-bold mb-2 inline-block">
-             <span className="border-b-2 border-[#AB2E26] pb-1">LIN</span>KS
+            <span className="border-b-2 border-[#AB2E26] pb-1">LIN</span>KS
           </h3>
           <ul className="mt-3 space-y-2 text-gray-700 font-poppins">
             <li>
@@ -102,21 +102,28 @@ export default function Footer() {
         {/* Reach Us */}
         <div>
           <h3 className="text-lg font-bold mb-2 inline-block">
-           <span className="border-b-2 border-[#AB2E26] pb-1"> REA</span>CH US
+            <span className="border-b-2 border-[#AB2E26] pb-1">REA</span>CH US
           </h3>
-          <div className="mt-3">
-            <iframe
-              title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.372707956289!2d73.0173493147259!3d19.08833218707913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1803fcd3d81%3A0x51c5f9c3d7eb7b2f!2sLemarkz%20Industries%20Kitchen%20Equipments!5e0!3m2!1sen!2sin!4v1693221234567!5m2!1sen!2sin"
-              width="100%"
-              height="200"
-              allowFullScreen=""
-              loading="lazy"
-              className="rounded-lg border"
-            ></iframe>
+
+          <div className="mt-3 relative">
+            <div className="overflow-hidden rounded-xl shadow-lg border border-gray-200">
+              <iframe
+                title="Google Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.7211716367692!2d73.02031643875095!3d19.068806955884128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1696c68e417%3A0xcae0f45a8bccb2ff!2sLemarkz%20Industries%20Kitchen%20Equipments!5e0!3m2!1sen!2sin!4v1756831968670!5m2!1sen!2sin"
+                width="100%"
+                height="250"
+                allowFullScreen=""
+                loading="lazy"
+                className="w-full h-[250px] rounded-xl"
+              ></iframe>
+            </div>
+
+            {/* Optional floating label */}
+            <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full shadow-md text-sm text-[#AB2E26] font-medium">
+              📍 Lemarkz Industries
+            </div>
           </div>
         </div>
-
       </div>
 
       {/* Bottom bar */}
@@ -128,72 +135,3 @@ export default function Footer() {
 }
 
 
-// import { NavLink } from "react-router-dom";
-// import logo from "../assets/img/lemarks_logo.png";
-
-
-// export default function Footer() {
-//   return (
-//     <footer className="bg-[#f8f2db] text-black">
-//       <div className="max-w-7xl mx-auto md:px-23 px-6 py-15 grid grid-cols-1 md:grid-cols-5 gap-8">
-        
-//         {/* First Big Column */}
-//         <div className="md:col-span-2">
-//           <div className="flex items-center space-x-2 mb-4">
-//             <img src={logo} alt="Logo" className="w-25 md:w-32" />
-//             <span className="text-2xl font-bold text-red-700"></span>
-//           </div>
-//           <p className="text-sm leading-relaxed">
-//             Geneva Enterprise Pvt. Ltd. (Lemarkz Industries Kitchen Equipments) 
-//             was established, almost two decades ago, and is presently operating 
-//             in Navi Mumbai, Maharashtra State of India.
-//           </p>
-//         </div>
-
-//         {/* Links */}
-//         <div className="md:col-span-1">
-//           <h3 className="font-bold text-lg mb-2">LINKS</h3>
-//           <ul className="space-y-2 text-sm">
-//             <li><NavLink to="/">Home</NavLink></li>
-//             <li><NavLink to="/about">About Us</NavLink></li>
-//             <li><NavLink to="/products">Our Product</NavLink></li>
-//             <li><NavLink to="/contact">Contact Us</NavLink></li>
-//           </ul>
-//         </div>
-
-//         {/* Products */}
-//         <div className="md:col-span-1">
-//           <h3 className="font-bold text-lg mb-2">PRODUCTS</h3>
-//           <ul className="space-y-2 text-sm">
-//             <li>Ovens</li>
-//             <li>Mixers</li>
-//             <li>Dough Sheeter</li>
-//             <li>Dough Series</li>
-//             <li>Kitchen Equipments</li>
-//             <li>Showcases</li>
-//             <li>All Accessories</li>
-//           </ul>
-//         </div>
-
-//         {/* Reach Us */}
-//         <div className="md:col-span-1">
-//           <h3 className="font-bold text-lg mb-2">REACH US</h3>
-//            <iframe
-//               title="Google Map"
-//               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.372707956289!2d73.0173493147259!3d19.08833218707913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1803fcd3d81%3A0x51c5f9c3d7eb7b2f!2sLemarkz%20Industries%20Kitchen%20Equipments!5e0!3m2!1sen!2sin!4v1693221234567!5m2!1sen!2sin"
-//               width="100%"
-//               height="200"
-//               allowFullScreen=""
-//               loading="lazy"
-//               className="rounded-lg border"
-//             ></iframe>
-//         </div>
-//       </div>
-
-//       {/* Bottom Bar */}
-//       <div className="bg-red-700 text-white text-center py-4 text-sm">
-//         © 2025 All Rights Reserved by Lemarkz. Designed by MZ Technologies.
-//       </div>
-//     </footer>
-//   );
-// }

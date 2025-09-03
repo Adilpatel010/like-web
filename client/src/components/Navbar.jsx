@@ -62,7 +62,7 @@ export default function Navbar() {
                                 <span>Products</span>
                                 <ChevronDown
                                     className={`ml-1 w-4 h-4 transform transition-transform duration-300 ${productsOpen ? "rotate-180" : ""
-                                    }`}
+                                        }`}
                                 />
                                 {/* underline effect */}
                                 <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-[#AB2E26] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
