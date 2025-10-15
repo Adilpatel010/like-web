@@ -6,8 +6,8 @@ const About = () => {
   return (
     <>
       <div className='px-6 py-10 bg-gradient-to-t from-[#efeeea] to-[#fdfbf3] font-poppins'>
-        <h2 className='max-w-7xl mx-auto text-center text-[#AB2E26] text-3xl md:text-5xl font-semibold'>About Lemarks Industries</h2>
-        <div className="mt-3 w-22 md:w-30 h-1 bg-[#AB2E26] mx-auto rounded-full"></div>
+        <h2 className='max-w-7xl mx-auto text-center text-primary text-3xl md:text-5xl font-semibold'>About Lemarks Industries</h2>
+        <div className="mt-3 w-22 md:w-30 h-1 bg-primary mx-auto rounded-full"></div>
         <p className='text-gray-600 mt-6 md:px-43 md:text-center text-justify text-md'>Welcome to Lemarkz, your trusted destination for high-quality bakery and kitchen equipment. At Lemarkz, we are committed to delivering excellence in every product, ensuring that your culinary creations are powered by reliability and innovation.</p>
       </div>
 
@@ -22,13 +22,13 @@ const About = () => {
             />
           </div>
           <div>
-            <h3 className="text-[#AB2E26] font-bold text-2xl mt-4">Welcome To</h3>
-            <h2 className="text-3xl md:text-4xl border-l-5 border-[#AB2E26] pl-3 text-black mt-1">
+            <h3 className="text-primary font-bold text-2xl mt-4">Welcome To</h3>
+            <h2 className="text-3xl md:text-4xl border-l-5 border-primary pl-3 text-black mt-1">
               Lemarkz Industries <br />
               Kitchen Equipments
             </h2>
             <p className="text-gray-950 mt-6 leading-relaxed">
-              <span className="text-[#4d0a05] font-medium"> Geneva Enterprise Pvt. Ltd.</span> <span className="text-[#AB2E26] font-medium"> (Lemarkz Industries Kitchen Equipments,
+              <span className="text-[#4d0a05] font-medium"> Geneva Enterprise Pvt. Ltd.</span> <span className="text-primary font-medium"> (Lemarkz Industries Kitchen Equipments,
                 Caterbell Industries & Noofast Impex) </span> was established almost two
               decades ago, and it is presently operating in Maharashtra, Gujarat,
               Karnataka & West Bengal State of India.
@@ -50,8 +50,8 @@ const About = () => {
       <section className="w-full bg-gradient-to-t from-[#fdfbf3] to-[#efeeea] py-12 px-6 md:px-12 lg:px-20 font-poppins">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 uppercase">
 
-          <div className="group bg-white shadow-lg rounded-2xl p-8 border-t-4 border-[#AB2E26] hover:shadow-xl hover:bg-[#AB2E26] transition-all duration-500">
-            <h3 className="text-2xl font-bold text-[#AB2E26] mb-4 group-hover:text-white transition-colors duration-500">
+          <div className="group bg-white shadow-lg rounded-2xl p-8 border-t-4 border-primary hover:shadow-xl hover:bg-primary transition-all duration-500">
+            <h3 className="text-2xl font-bold text-primary mb-4 group-hover:text-white transition-colors duration-500">
               Our Mission
             </h3>
             <p className="text-gray-700 leading-relaxed text-sm md:text-base group-hover:text-white transition-colors duration-500">
@@ -60,8 +60,8 @@ const About = () => {
             </p>
           </div>
 
-          <div className="group bg-white shadow-lg rounded-2xl p-8 border-t-4 border-[#AB2E26] hover:shadow-xl hover:bg-[#AB2E26] transition-all duration-500">
-            <h3 className="text-2xl font-bold text-[#AB2E26] mb-4 group-hover:text-white transition-colors duration-500">
+          <div className="group bg-white shadow-lg rounded-2xl p-8 border-t-4 border-primary hover:shadow-xl hover:bg-primary transition-all duration-500">
+            <h3 className="text-2xl font-bold text-primary mb-4 group-hover:text-white transition-colors duration-500">
               Our Vision
             </h3>
             <p className="text-gray-700 leading-relaxed text-sm md:text-base group-hover:text-white transition-colors duration-500">

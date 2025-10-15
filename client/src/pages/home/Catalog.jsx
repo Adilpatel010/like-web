@@ -21,9 +21,9 @@ const Catalog = () => {
                             <button
                                 className="relative overflow-hidden group text-sm cursor-pointer 
             text-white px-6 py-3 rounded-3xl uppercase font-semibold 
-            bg-[#AB2E26] border-white border-2 hover:border-[#FFF2BF]"
+            bg-primary border-white border-2 hover:border-[#FFF2BF] hover:text-primary"
                             >
-                                <span className="font-poppins relative z-10 transition-colors duration-500 group-hover:text-[#AB2E26] tracking-wide">
+                                <span className="font-poppins relative z-10 transition-colors duration-500 group-hover:text-pribg-primary tracking-wide">
                                     Download Catalogue
                                 </span>
                                 <span

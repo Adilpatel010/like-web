@@ -4,8 +4,8 @@ import { Instagram, Facebook } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FBF4DB] font-poppins">
-      <div className="max-w-7xl mx-auto md:px-20 px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-secondary font-poppins">
+      <div className="max-w-7xl mx-auto md:px-10 lg:px-20 px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
         {/* Logo & About */}
         <div>
@@ -37,7 +37,7 @@ export default function Footer() {
         {/* Links */}
         <div>
           <h3 className="text-lg font-bold mb-2 inline-block">
-            <span className="border-b-2 border-[#AB2E26] pb-1">LIN</span>KS
+            <span className="border-b-2 border-primary pb-1">LIN</span>KS
           </h3>
           <ul className="mt-3 space-y-2 text-gray-700 font-poppins">
             <li>
@@ -86,7 +86,7 @@ export default function Footer() {
         {/* Products */}
         <div>
           <h3 className="text-lg font-bold mb-2 inline-block">
-            <span className="border-b-2 border-[#AB2E26] pb-1">PRO</span>DUCTS
+            <span className="border-b-2 border-primary pb-1">PRO</span>DUCTS
           </h3>
           <ul className="mt-3 space-y-2 text-gray-700">
             <li><NavLink to="/products/ovens" className="hover:text-red-700">Ovens</NavLink></li>
@@ -102,7 +102,7 @@ export default function Footer() {
         {/* Reach Us */}
         <div>
           <h3 className="text-lg font-bold mb-2 inline-block">
-            <span className="border-b-2 border-[#AB2E26] pb-1">REA</span>CH US
+            <span className="border-b-2 border-primary pb-1">REA</span>CH US
           </h3>
 
           <div className="mt-3 relative">
@@ -119,7 +119,7 @@ export default function Footer() {
             </div>
 
             {/* Optional floating label */}
-            <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full shadow-md text-sm text-[#AB2E26] font-medium">
+            <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full shadow-md text-sm text-primary font-medium">
               📍 Lemarkz Industries
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="bg-[#AB2E26] text-center py-3 md:py-6 text-white text-sm">
+      <div className="bg-primary text-center py-3 md:py-6 text-white text-sm">
         © {new Date().getFullYear()} Lemarkz Industries Kitchen Equipments. All rights reserved.
       </div>
     </footer>

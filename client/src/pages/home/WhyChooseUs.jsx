@@ -103,10 +103,10 @@
 //         <section className="py-20 bg-gradient-to-b from-[#f8f4ea] via-[#f6f1e1] to-[#f8efde] mt-4 font-poppins">
 //             <div className="max-w-7xl mx-auto px-6 lg:px-20 text-center">
 //                 {/* Heading */}
-//                 <h2 className="text-3xl md:text-5xl font-bold text-[#AB2E26] -mt-3">
+//                 <h2 className="text-3xl md:text-5xl font-bold text-primary -mt-3">
 //                     Why Choose Us
 //                 </h2>
-//                 <div className="mt-2 w-20 h-1 bg-[#AB2E26] mx-auto rounded-full"></div>
+//                 <div className="mt-2 w-20 h-1 bg-primary mx-auto rounded-full"></div>
 //                 <p className="mt-4 text-gray-600 md:text-lg">
 //                     Here’s what sets us apart from others in the industry
 //                 </p>
@@ -161,10 +161,10 @@ export default function WhyChooseUs() {
         <section className="py-20 bg-gradient-to-b from-[#f8f4ea] via-[#f6f1e1] to-[#f8efde] mt-4 font-poppins">
             <div className="max-w-7xl mx-auto px-6 lg:px-20 text-center">
                 {/* Heading */}
-                <h2 className="text-3xl md:text-4xl font-bold text-[#AB2E26] -mt-3">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary -mt-3">
                     Why Choose Us
                 </h2>
-                <div className="mt-2 w-20 h-1 bg-[#AB2E26] mx-auto rounded-full"></div>
+                <div className="mt-2 w-20 h-1 bg-primary mx-auto rounded-full"></div>
                 <p className="mt-4 text-gray-600 md:text-lg">
                     Here’s what sets us apart from others in the industry
                 </p>
@@ -173,10 +173,10 @@ export default function WhyChooseUs() {
                 <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     {/* Card 1 */}
-                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-[#AB2E26] hover:shadow-xl">
+                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-primary hover:shadow-xl">
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="flex justify-center items-center w-14 h-14 bg-[#AB2E26]/10 rounded-xl transition group-hover:bg-white/20">
-                                <ShieldCheck className="w-20 h-8 text-[#AB2E26] transition group-hover:text-white" />
+                            <div className="flex justify-center items-center w-14 h-14 bg-primary/10 rounded-xl transition group-hover:bg-white/20">
+                                <ShieldCheck className="w-20 h-8 text-primary transition group-hover:text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 transition group-hover:text-white">
                                 Quality, Durability, Reliability
@@ -190,10 +190,10 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-[#AB2E26] hover:shadow-xl">
+                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-primary hover:shadow-xl">
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="flex justify-center items-center w-14 h-14 bg-[#AB2E26]/10 rounded-xl transition group-hover:bg-white/20">
-                                <Package className="w-20 h-8 text-[#AB2E26] transition group-hover:text-white" />
+                            <div className="flex justify-center items-center w-14 h-14 bg-primary/10 rounded-xl transition group-hover:bg-white/20">
+                                <Package className="w-20 h-8 text-primary transition group-hover:text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 transition group-hover:text-white">
                                 Wide Product Range
@@ -207,10 +207,10 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-[#AB2E26] hover:shadow-xl">
+                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-primary hover:shadow-xl">
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="flex justify-center items-center w-14 h-14 bg-[#AB2E26]/10 rounded-xl transition group-hover:bg-white/20">
-                                <DollarSign className="w-20 h-8 text-[#AB2E26] transition group-hover:text-white" />
+                            <div className="flex justify-center items-center w-14 h-14 bg-primary/10 rounded-xl transition group-hover:bg-white/20">
+                                <DollarSign className="w-20 h-8 text-primary transition group-hover:text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 transition group-hover:text-white">
                                 Competitive Pricing
@@ -224,10 +224,10 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Card 4 */}
-                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-[#AB2E26] hover:shadow-xl">
+                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-primary hover:shadow-xl">
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="flex justify-center items-center w-14 h-14 bg-[#AB2E26]/10 rounded-xl transition group-hover:bg-white/20">
-                                <Cpu className="w-20 h-8 text-[#AB2E26] transition group-hover:text-white" />
+                            <div className="flex justify-center items-center w-14 h-14 bg-primary/10 rounded-xl transition group-hover:bg-white/20">
+                                <Cpu className="w-20 h-8 text-primary transition group-hover:text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 transition group-hover:text-white">
                                 Innovative Technology
@@ -240,10 +240,10 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Card 5 */}
-                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-[#AB2E26] hover:shadow-xl">
+                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-primary hover:shadow-xl">
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="flex justify-center items-center w-14 h-14 bg-[#AB2E26]/10 rounded-xl transition group-hover:bg-white/20">
-                                <Settings className="w-20 h-8 text-[#AB2E26] transition group-hover:text-white" />
+                            <div className="flex justify-center items-center w-14 h-14 bg-primary/10 rounded-xl transition group-hover:bg-white/20">
+                                <Settings className="w-20 h-8 text-primary transition group-hover:text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 transition group-hover:text-white">
                                 Customizations
@@ -256,10 +256,10 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Card 6 */}
-                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-[#AB2E26] hover:shadow-xl">
+                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-primary hover:shadow-xl">
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="flex justify-center items-center w-14 h-14 bg-[#AB2E26]/10 rounded-xl transition group-hover:bg-white/20">
-                                <Users className="w-20 h-8 text-[#AB2E26] transition group-hover:text-white" />
+                            <div className="flex justify-center items-center w-14 h-14 bg-primary/10 rounded-xl transition group-hover:bg-white/20">
+                                <Users className="w-20 h-8 text-primary transition group-hover:text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 transition group-hover:text-white">
                                 Expertise
@@ -272,10 +272,10 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Card 7 */}
-                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-[#AB2E26] hover:shadow-xl">
+                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-primary hover:shadow-xl">
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="flex justify-center items-center w-14 h-14 bg-[#AB2E26]/10 rounded-xl transition group-hover:bg-white/20">
-                                <Headphones className="w-20 h-8 text-[#AB2E26] transition group-hover:text-white" />
+                            <div className="flex justify-center items-center w-14 h-14 bg-primary/10 rounded-xl transition group-hover:bg-white/20">
+                                <Headphones className="w-20 h-8 text-primary transition group-hover:text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 transition group-hover:text-white">
                                 Customer Support & Service
@@ -288,10 +288,10 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Card 8 */}
-                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-[#AB2E26] hover:shadow-xl">
+                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-primary hover:shadow-xl">
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="flex justify-center items-center w-14 h-14 bg-[#AB2E26]/10 rounded-xl transition group-hover:bg-white/20">
-                                <BadgeCheck className="w-20 h-8 text-[#AB2E26] transition group-hover:text-white" />
+                            <div className="flex justify-center items-center w-14 h-14 bg-primary/10 rounded-xl transition group-hover:bg-white/20">
+                                <BadgeCheck className="w-20 h-8 text-primary transition group-hover:text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 transition group-hover:text-white">
                                 Warranty & Guarantee
@@ -304,10 +304,10 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Card 9 */}
-                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-[#AB2E26] hover:shadow-xl">
+                    <div className="group bg-white p-8 rounded-2xl shadow-md transition duration-300 text-left hover:bg-primary hover:shadow-xl">
                         <div className="flex items-center gap-3 mb-5">
-                            <div className="flex justify-center items-center w-14 h-14 bg-[#AB2E26]/10 rounded-xl transition group-hover:bg-white/20">
-                                <AlertTriangle className="w-20 h-8 text-[#AB2E26] transition group-hover:text-white" />
+                            <div className="flex justify-center items-center w-14 h-14 bg-primary/10 rounded-xl transition group-hover:bg-white/20">
+                                <AlertTriangle className="w-20 h-8 text-primary transition group-hover:text-white" />
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 transition group-hover:text-white">
                                 Safety

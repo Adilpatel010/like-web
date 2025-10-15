@@ -28,7 +28,7 @@
 //         <section className="py-12 bg-white">
 //             <div className="max-w-7xl md:px-20 mx-auto px-4 text-center">
 //                 {/* Heading */}
-//                 <h2 className="text-3xl md:text-5xl font-bold text-[#AB2E26]">
+//                 <h2 className="text-3xl md:text-5xl font-bold text-primary">
 //                     Popular Products
 //                 </h2>
 //                 <p className="mt-3 text-gray-600 md:text-xl">
@@ -43,12 +43,12 @@
 //                             className="group border-gray-200 rounded-md border overflow-hidden bg-white hover:shadow-xl transition-all duration-500"
 //                         >
 //                             <div className="absolute bottom-0 left-0 w-full h-full overflow-hidden">
-//                                 <div className="absolute bottom-[-100%] left-0 w-full h-full bg-[#AB2E26] rounded-t-[100px] transition-transform duration-700 ease-in-out group-hover:translate-y-[-60%]" />
+//                                 <div className="absolute bottom-[-100%] left-0 w-full h-full bg-primary rounded-t-[100px] transition-transform duration-700 ease-in-out group-hover:translate-y-[-60%]" />
 //                             </div>
 //                             {/* Image with half background */}
 //                             <div className="relative flex justify-center items-end h-64">
 //                                 {/* Half background (bottom 50%) */}
-//                                 <div className="absolute bottom-0 left-0 w-full h-1/2 rounded-t-4xl bg-white transition-colors duration-500 group-hover:bg-[#AB2E26]" />
+//                                 <div className="absolute bottom-0 left-0 w-full h-1/2 rounded-t-4xl bg-white transition-colors duration-500 group-hover:bg-primary" />
 
 //                                 {/* Product image */}
 //                                 <img
@@ -59,7 +59,7 @@
 //                             </div>
 
 //                             {/* Text Section */}
-//                             <div className="p-4 bg-white transition-colors duration-500 group-hover:bg-[#AB2E26] border-t-1 border-gray-200">
+//                             <div className="p-4 bg-white transition-colors duration-500 group-hover:bg-primary border-t-1 border-gray-200">
 //                                 <h3 className="text-sm font-semibold text-gray-800 transition-colors duration-500 group-hover:text-white">
 //                                     {product.name}
 //                                 </h3>
@@ -94,7 +94,7 @@
 //         <section className="py-20 bg-white">
 //             <div className="max-w-7xl mx-auto px-4 md:px-20 text-center cursor-pointer">
 //                 {/* Title */}
-//                 <h2 className="text-3xl md:text-5xl font-bold text-[#AB2E26]">
+//                 <h2 className="text-3xl md:text-5xl font-bold text-primary">
 //                     Popular Products
 //                 </h2>
 //                 <p className="mt-3 text-gray-600 md:text-xl">
@@ -132,7 +132,7 @@
 //                                     </div>
 
 //                                     {/* Text Section */}
-//                                     <div className="p-4 bg-white transition-colors duration-500 group-hover:bg-[#AB2E26] border-t border-gray-200 relative z-10">
+//                                     <div className="p-4 bg-white transition-colors duration-500 group-hover:bg-primary border-t border-gray-200 relative z-10">
 //                                         <h3 className="text-sm font-semibold text-gray-800 transition-colors duration-500 group-hover:text-white">
 //                                             {product.name}
 //                                         </h3>
@@ -144,10 +144,10 @@
 
 //                     {/* Custom Nav Buttons */}
 //                     <div className="flex gap-3 absolute left-1/2 -translate-x-1/2 mt-5 ">
-//                         <button className="custom-prev bg-[#AB2E26] text-white px-4 py-3 hover:bg-[#8c251e] rounded-md cursor-pointer">
+//                         <button className="custom-prev bg-primary text-white px-4 py-3 hover:bg-[#8c251e] rounded-md cursor-pointer">
 //                             ‹
 //                         </button>
-//                         <button className="custom-next bg-[#AB2E26] text-white px-4 py-3 hover:bg-[#8c251e] rounded-md cursor-pointer">
+//                         <button className="custom-next bg-primary text-white px-4 py-3 hover:bg-[#8c251e] rounded-md cursor-pointer">
 //                             ›
 //                         </button>
 //                     </div>
@@ -177,7 +177,7 @@
 //         <section className="py-20 bg-white font-poppins">
 //             <div className="max-w-7xl mx-auto px-5 md:px-20 text-center">
 //                 {/* Title */}
-//                 <h2 className="text-3xl md:text-5xl font-bold text-[#AB2E26]">
+//                 <h2 className="text-3xl md:text-5xl font-bold text-primary">
 //                     Popular Products
 //                 </h2>
 //                 <p className="mt-3 text-gray-600 md:text-xl">
@@ -217,7 +217,7 @@
 //                                     </div>
 
 //                                     {/* Text Section */}
-//                                     <div className="p-4 bg-[#fbeec0] transition-colors duration-500 group-hover:bg-[#AB2E26] border-t border-gray-200 relative z-10">
+//                                     <div className="p-4 bg-[#fbeec0] transition-colors duration-500 group-hover:bg-primary border-t border-gray-200 relative z-10">
 //                                         <h3 className="text-sm font-semibold text-gray-800 transition-colors duration-500 group-hover:text-white">
 //                                             {product.name}
 //                                         </h3>
@@ -229,10 +229,10 @@
 
 //                     {/* Custom Nav Buttons */}
 //                     <div className="flex gap-3 absolute left-1/2 -translate-x-1/2 mt-5">
-//                         <button className="custom-prev bg-[#AB2E26] text-white px-4 py-3 hover:bg-[#8c251e] rounded-md cursor-pointer">
+//                         <button className="custom-prev bg-primary text-white px-4 py-3 hover:bg-[#8c251e] rounded-md cursor-pointer">
 //                             ‹
 //                         </button>
-//                         <button className="custom-next bg-[#AB2E26] text-white px-4 py-3 hover:bg-[#8c251e] rounded-md cursor-pointer">
+//                         <button className="custom-next bg-primary text-white px-4 py-3 hover:bg-[#8c251e] rounded-md cursor-pointer">
 //                             ›
 //                         </button>
 //                     </div>
@@ -263,9 +263,9 @@ export default function PopularProducts() {
     <section className="py-20 bg-white font-poppins">
       <div className="max-w-7xl mx-auto px-5 md:px-20 text-center">
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#AB2E26]">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary">
           Popular Products
-          <div className="mt-2 w-20 h-1 bg-[#AB2E26] mx-auto rounded-full"></div>
+          <div className="mt-2 w-20 h-1 bg-primary mx-auto rounded-full"></div>
         </h2>
         <p className="mt-3 text-gray-600 md:text-xl">
           Our best-selling products loved by bakeries worldwide!
@@ -304,7 +304,7 @@ export default function PopularProducts() {
                   </div>
 
                   {/* Text Section */}
-                  <div className="p-5 bg-[#fbeec0] transition-colors duration-500 group-hover:bg-[#AB2E26] border-t border-gray-200">
+                  <div className="p-5 bg-[#fbeec0] transition-colors duration-500 group-hover:bg-primary border-t border-gray-200">
                     <h3 className="text-lg font-semibold text-gray-900 transition-colors duration-500 group-hover:text-white">
                       {product.name}
                     </h3>
@@ -319,10 +319,10 @@ export default function PopularProducts() {
 
           {/* Custom Nav Buttons */}
           <div className="flex gap-4 absolute left-1/2 -translate-x-1/2 mt-6">
-            <button className="custom-prev bg-[#AB2E26] text-white w-12 h-12 flex items-center justify-center text-2xl rounded-full shadow-md hover:bg-[#8c251e] transition cursor-pointer">
+            <button className="custom-prev bg-primary text-white w-12 h-12 flex items-center justify-center text-2xl rounded-full shadow-md hover:bg-[#8c251e] transition cursor-pointer">
               ‹
             </button>
-            <button className="custom-next bg-[#AB2E26] text-white w-12 h-12 flex items-center justify-center text-2xl rounded-full shadow-md hover:bg-[#8c251e] transition cursor-pointer">
+            <button className="custom-next bg-primary text-white w-12 h-12 flex items-center justify-center text-2xl rounded-full shadow-md hover:bg-[#8c251e] transition cursor-pointer">
               ›
             </button>
           </div>

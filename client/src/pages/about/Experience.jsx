@@ -15,7 +15,7 @@ const Experience = () => {
                 {/* Subtext */}
                 <p className="text-gray-600 mb-8 text-base md:text-lg text-justify md:text-center">
                     Join thousands of happy customers who have made{" "}
-                    <span className="text-[#AB2E26] font-semibold">Lemarks</span> their go-to
+                    <span className="text-primary font-semibold">Lemarks</span> their go-to
                     choice for premium solutions. Discover the quality, innovation, and
                     care that set us apart.
                 </p>
@@ -23,14 +23,14 @@ const Experience = () => {
                 {/* Buttons */}
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
                     <NavLink to="/products" className="w-full md:w-auto">
-                        <button className="flex items-center justify-center gap-2 w-full md:w-auto px-6 py-3 bg-[#AB2E26] text-white rounded-xl shadow-md hover:bg-[#901f1a] transition-all duration-500 cursor-pointer hover:scale-105">
+                        <button className="flex items-center justify-center gap-2 w-full md:w-auto px-6 py-3 bg-primary text-white rounded-xl shadow-md hover:bg-[#901f1a] transition-all duration-500 cursor-pointer hover:scale-105">
                             <Package className="w-5 h-5" />
                             Explore Products
                         </button>
                     </NavLink>
 
                     <NavLink to="/contact" className="w-full md:w-auto">
-                        <button className="flex items-center justify-center gap-2 w-full md:w-auto px-6 py-3 border-2 border-[#AB2E26] text-[#AB2E26] rounded-xl shadow-md hover:bg-[#AB2E26] hover:text-white transition-all duration-300 cursor-pointer">
+                        <button className="flex items-center justify-center gap-2 w-full md:w-auto px-6 py-3 border-2 border-primary text-primary rounded-xl shadow-md hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer">
                             <Mail className="w-5 h-5" />
                             Contact Us
                         </button>
