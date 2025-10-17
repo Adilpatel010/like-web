@@ -424,7 +424,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../assets/img/lemarks_logo.png";
+import logo from "../assets/img/lemarks_logo1.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -432,27 +432,27 @@ export default function Navbar() {
   const [productsOpen, setProductsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <nav className="bg-white shadow-md fixed w-full z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container">
         {/* Navbar container */}
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <NavLink to="/">
-            <img src={logo} className="w-28 md:w-32" alt="Logo" />
+            <img src={logo} className="w-25 md:w-28" alt="Logo" />
           </NavLink>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex flex-1 justify-center space-x-10 items-center">
+          <div className="hidden lg:flex flex-1 justify-center space-x-10 items-center">
             {/* Home */}
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${
-                  isActive
-                    ? "font-semibold text-primary"
-                    : "text-[#b14e47] hover:text-primary"
+                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive
+                  ? "font-semibold text-primary"
+                  : "text-[#b14e47] hover:text-primary"
                 }`
               }
             >
@@ -464,10 +464,9 @@ export default function Navbar() {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${
-                  isActive
-                    ? "font-semibold text-primary"
-                    : "text-[#b14e47] hover:text-primary"
+                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive
+                  ? "font-semibold text-primary"
+                  : "text-[#b14e47] hover:text-primary"
                 }`
               }
             >
@@ -484,18 +483,16 @@ export default function Navbar() {
               <NavLink
                 to="/products"
                 className={({ isActive }) =>
-                  `relative flex items-center font-poppins font-medium uppercase tracking-wider cursor-pointer group ${
-                    isActive
-                      ? "font-semibold text-primary"
-                      : "text-[#b14e47] hover:text-primary"
+                  `relative flex items-center font-poppins font-medium uppercase tracking-wider cursor-pointer group ${isActive
+                    ? "font-semibold text-primary"
+                    : "text-[#b14e47] hover:text-primary"
                   }`
                 }
               >
                 <span>Products</span>
                 <ChevronDown
-                  className={`ml-1 w-4 h-4 transform transition-transform duration-300 ${
-                    productsOpen ? "rotate-180" : ""
-                  }`}
+                  className={`ml-1 w-4 h-4 transform transition-transform duration-300 ${productsOpen ? "rotate-180" : ""
+                    }`}
                 />
                 <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></span>
               </NavLink>
@@ -523,10 +520,9 @@ export default function Navbar() {
                         key={item}
                         to={`/products/${item}`}
                         className={({ isActive }) =>
-                          `block px-4 py-2 transition ${
-                            isActive
-                              ? "bg-[#FFFBE6] text-primary font-semibold"
-                              : "text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6]"
+                          `block px-4 py-2 transition ${isActive
+                            ? "bg-[#FFFBE6] text-primary font-semibold"
+                            : "text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6]"
                           }`
                         }
                       >
@@ -548,10 +544,9 @@ export default function Navbar() {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${
-                  isActive
-                    ? "font-semibold text-primary"
-                    : "text-[#b14e47] hover:text-primary"
+                `font-poppins relative font-medium uppercase tracking-wider transition duration-300 group ${isActive
+                  ? "font-semibold text-primary"
+                  : "text-[#b14e47] hover:text-primary"
                 }`
               }
             >
@@ -561,7 +556,7 @@ export default function Navbar() {
           </div>
 
           {/* Catalogue Button (Desktop) */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <a
               href="/Lemarks-Catalogue.pdf"
               target="_blank"
@@ -577,7 +572,7 @@ export default function Navbar() {
           </div>
 
           {/* Hamburger Menu (Mobile & Tablet ≤768px) */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
               className="text-gray-950 focus:outline-none"
@@ -600,7 +595,7 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white shadow-md overflow-hidden"
+            className="lg:hidden bg-white shadow-md overflow-hidden"
           >
             {[
               { name: "Home", link: "/" },
@@ -611,10 +606,9 @@ export default function Navbar() {
                 to={item.link}
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
-                  `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] border-b border-gray-200 transition ${
-                    isActive
-                      ? "font-semibold text-primary"
-                      : "text-[#777777] hover:text-primary hover:bg-gray-100"
+                  `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] border-b border-gray-200 transition ${isActive
+                    ? "font-semibold text-primary"
+                    : "text-[#777777] hover:text-primary hover:bg-gray-100"
                   }`
                 }
               >
@@ -632,8 +626,7 @@ export default function Navbar() {
                     setDropdownOpen(false);
                   }}
                   className={({ isActive }) =>
-                    `font-poppins flex-1 px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-primary hover:bg-gray-100 transition ${
-                      isActive ? "text-primary font-semibold" : ""
+                    `font-poppins flex-1 px-3 py-3 mx-3 text-[#777777] font-medium uppercase tracking-[.10em] hover:text-primary hover:bg-gray-100 transition ${isActive ? "text-primary font-semibold" : ""
                     }`
                   }
                 >
@@ -646,9 +639,8 @@ export default function Navbar() {
                   className="px-3 py-3 mr-3 text-[#777777] hover:text-primary transition"
                 >
                   <ChevronDown
-                    className={`w-4 h-4 transform transition-transform duration-300 ${
-                      dropdownOpen ? "rotate-180 text-primary" : ""
-                    }`}
+                    className={`w-4 h-4 transform transition-transform duration-300 ${dropdownOpen ? "rotate-180 text-primary" : ""
+                      }`}
                   />
                 </button>
               </div>
@@ -680,8 +672,7 @@ export default function Navbar() {
                           setDropdownOpen(false);
                         }}
                         className={({ isActive }) =>
-                          `block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition ${
-                            isActive ? "font-semibold text-primary" : ""
+                          `block px-4 py-2 text-[#b14e47] hover:text-gray-900 hover:bg-[#FFFBE6] transition ${isActive ? "font-semibold text-primary" : ""
                           }`
                         }
                       >
@@ -704,10 +695,9 @@ export default function Navbar() {
               to="/contact"
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] transition ${
-                  isActive
-                    ? "font-semibold text-primary"
-                    : "text-[#777777] hover:text-primary hover:bg-gray-100"
+                `font-poppins block px-3 py-3 mx-3 font-medium uppercase tracking-[.10em] transition ${isActive
+                  ? "font-semibold text-primary"
+                  : "text-[#777777] hover:text-primary hover:bg-gray-100"
                 }`
               }
             >

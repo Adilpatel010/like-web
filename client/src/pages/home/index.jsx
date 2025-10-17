@@ -1,15 +1,16 @@
 import React from 'react'
-import Home from './Home'
+import HeroSection from './HeroSection'
 import Welcome from './Welcome'
 import PopularProducts from './PopularProducts'
 import WhyChooseUs from './WhyChooseUs'
 import Client from './Client'
 import Contact from './Contact'
 
+
 const index = () => {
   return (
     <div>
-      <Home />
+      <HeroSection />
       <Welcome />
       <PopularProducts />
       <WhyChooseUs />

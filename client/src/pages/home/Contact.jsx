@@ -5,7 +5,8 @@ import { NavLink } from 'react-router-dom'
 const Contact = () => {
     return (
         <>
-            <div className="max-w-6xl mx-auto text-center px-2">
+        <section className='w-full'>
+            <div className="container">
                 <div className='px-4 py-10 bg-white md:px-11 font-poppins'>
                     <h2 className='text-center text-2xl md:text-4xl font-bold text-primary'>Want to reach out to us?</h2>
                     <div className="mt-2 w-20 h-1 bg-primary mx-auto rounded-full"></div>
@@ -69,6 +70,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            </section>
         </>
     )
 }

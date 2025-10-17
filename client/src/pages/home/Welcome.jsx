@@ -6,8 +6,8 @@ import { NavLink } from "react-router-dom";
 const Welcome = () => {
     return (
         <>
-            <section className="w-full bg-white py-5 px-5 md:px-12 lg:px-20">
-                <div className="max-w-6xl mx-auto">
+            <section className="w-full bg-white">
+                <div className="container">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center font-poppins">
                         {/* Left Content */}
                         <div>
@@ -33,21 +33,23 @@ const Welcome = () => {
                             </p>
 
                             {/* Button */}
-                            <NavLink to="/about">
-                                <button className="cursor-pointer font-medium mt-6 group relative flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-3xl overflow-hidden transition-colors duration-300 hover:bg-[#FFF2BF] hover:text-primary">
+                            <button>
+                                <NavLink to="/about">
+                                    <div className="cursor-pointer font-medium mt-6 group relative flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full overflow-hidden transition-colors duration-300 hover:bg-[#FFF2BF] hover:text-primary">
 
-                                    <span className="tracking-wider transform transition-transform duration-300 group-hover:translate-x-5">
-                                        READ MORE
-                                    </span>
-                                    <ArrowUpRight
-                                        className="w-5 h-5 transform -translate-x-1 transition-all duration-300 group-hover:-translate-x-28 group-hover:opacity-100"
-                                    />
-                                </button>
-                            </NavLink>
+                                        <span className="tracking-wider transform transition-transform duration-300 group-hover:translate-x-5">
+                                            READ MORE
+                                        </span>
+                                        <ArrowUpRight
+                                            className="w-5 h-5 transform -translate-x-1 transition-all duration-300 group-hover:-translate-x-28 group-hover:opacity-100"
+                                        />
+                                    </div>
+                                </NavLink>
+                            </button>
                         </div>
 
                         {/* Right Images */}
-                        <div className="relative flex flex-col items-center md:items-end space-y-4">
+                        <div className="relative flex flex-col items-center md:items-center space-y-4">
                             {/* Top Image */}
                             <img
                                 src={about}

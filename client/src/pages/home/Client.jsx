@@ -6,8 +6,8 @@ import "swiper/css/pagination";
 
 const Client = () => {
     return (
-        <section className="py-12 px-4 lg:px-20 bg-gray-100 font-poppins">
-            <div className="max-w-6xl mx-auto text-center px-2">
+        <section className=" bg-gray-100 font-poppins py-10 lg:py-12">
+            <div className="container text-center">
                 {/* Title */}
                 <h2 className="text-3xl md:text-4xl font-bold mb-2 text-primary">
                     What Our Clients Say
