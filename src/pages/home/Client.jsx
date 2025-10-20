@@ -36,7 +36,7 @@ const Client = () => {
                             <div className="bg-white rounded-2xl p-6 text-left transition duration-300 pb-23">
                                 <div className="flex items-center gap-4 mb-4">
                                     <img
-                                        src="/src/assets/img/pro.png"
+                                        src="https://imgs.search.brave.com/aviNp3JpIQEGZUBzMTTCjWZUv807TxsaS9SlOLLiLl4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMTIyMjUvMTIy/MjU5MzUucG5n"
                                         alt="Sanket Jain"
                                         className="w-12 h-12 rounded-full"
                                     />
@@ -64,7 +64,7 @@ const Client = () => {
                             <div className="bg-white rounded-2xl p-6 text-left transition duration-300">
                                 <div className="flex items-center gap-4 mb-4">
                                     <img
-                                        src="/src/assets/img/pro.png"
+                                        src="https://imgs.search.brave.com/aviNp3JpIQEGZUBzMTTCjWZUv807TxsaS9SlOLLiLl4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMTIyMjUvMTIy/MjU5MzUucG5n"
                                         alt="Adil Patel"
                                         className="w-12 h-12 rounded-full"
                                     />
@@ -92,7 +92,7 @@ const Client = () => {
                             <div className="bg-white rounded-2xl p-6 text-left transition duration-300">
                                 <div className="flex items-center gap-4 mb-4">
                                     <img
-                                        src="/src/assets/img/pro.png"
+                                        src="https://imgs.search.brave.com/aviNp3JpIQEGZUBzMTTCjWZUv807TxsaS9SlOLLiLl4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMTIyMjUvMTIy/MjU5MzUucG5n"
                                         alt="Mohammad Balva"
                                         className="w-12 h-12 rounded-full"
                                     />
@@ -123,7 +123,7 @@ const Client = () => {
                     <div className="bg-white rounded-2xl shadow-lg p-6 text-left hover:shadow-2xl transition duration-300">
                         <div className="flex items-start gap-4 mb-4">
                             <img
-                                src="/src/assets/img/pro.png"
+                                src="https://imgs.search.brave.com/aviNp3JpIQEGZUBzMTTCjWZUv807TxsaS9SlOLLiLl4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMTIyMjUvMTIy/MjU5MzUucG5n"
                                 alt="Sanket Jain"
                                 className="w-12 h-12 rounded-full"
                             />
@@ -149,7 +149,7 @@ const Client = () => {
                     <div className="bg-white rounded-2xl shadow-lg p-6 text-left hover:shadow-2xl transition duration-300">
                         <div className="flex items-center gap-4 mb-4">
                             <img
-                                src="/src/assets/img/pro.png"
+                                src="https://imgs.search.brave.com/aviNp3JpIQEGZUBzMTTCjWZUv807TxsaS9SlOLLiLl4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMTIyMjUvMTIy/MjU5MzUucG5n"
                                 alt="Adil Patel"
                                 className="w-12 h-12 rounded-full"
                             />
@@ -175,7 +175,7 @@ const Client = () => {
                     <div className="bg-white rounded-2xl shadow-lg p-6 text-left hover:shadow-2xl transition duration-300">
                         <div className="flex items-center gap-4 mb-4">
                             <img
-                                src="/src/assets/img/pro.png"
+                                src="https://imgs.search.brave.com/aviNp3JpIQEGZUBzMTTCjWZUv807TxsaS9SlOLLiLl4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMTIyMjUvMTIy/MjU5MzUucG5n"
                                 alt="Mohammad Balva"
                                 className="w-12 h-12 rounded-full"
                             />
