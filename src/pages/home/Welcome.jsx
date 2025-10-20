@@ -4,6 +4,7 @@ import about from '../../assets/img/about_img.png';
 import { NavLink } from "react-router-dom";
 
 const Welcome = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     return (
         <>
             <section className="w-full bg-white">
