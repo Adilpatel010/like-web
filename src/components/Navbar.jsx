@@ -327,8 +327,6 @@ export default function Navbar() {
       setDropdownOpen(false);
     }
   };
-
-
   return (
     <>
       <header className="fixed z-50 w-full">

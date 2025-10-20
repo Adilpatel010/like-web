@@ -44,6 +44,7 @@ import React, { useState, useEffect } from 'react';
 import { Award, Calendar, Download } from 'lucide-react';
 
 const HeroSection = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   const [activeIndex, setActiveIndex] = useState(0);
 
   // const heroCards = [

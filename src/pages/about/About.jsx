@@ -1,5 +1,4 @@
 import React from "react";
-import about from '../../assets/img/1.png';
 
 const About = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -18,7 +17,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 items-center font-poppins">
             <div className="relative flex flex-col items-center md:items-center space-y-4">
               <img
-                src={about}
+                src="https://lemarkzindustries.com/admin/images/16939099693%20Deck%2012%20Tray%20Gas%20Oven.png"
                 alt="Mixer"
                 className="h-85 md:h-110 object-cover"
               />
