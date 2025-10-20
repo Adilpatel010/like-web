@@ -5,22 +5,22 @@ const About = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <>
-      <div className='px-6 py-10 bg-gradient-to-t from-[#efeeea] to-[#fdfbf3] font-poppins'>
+      <div className='py-10 bg-gradient-to-t from-[#efeeea] to-[#fdfbf3] font-poppins'>
         <div className="container">
           <h2 className='text-center text-primary text-3xl md:text-5xl font-semibold'>About Lemarks Industries</h2>
           <div className="mt-3 w-22 md:w-30 h-1 bg-primary mx-auto rounded-full"></div>
-          <p className='text-gray-600 mt-6 md:px-43 md:text-center text-justify text-md'>Welcome to Lemarkz, your trusted destination for high-quality bakery and kitchen equipment. At Lemarkz, we are committed to delivering excellence in every product, ensuring that your culinary creations are powered by reliability and innovation.</p>
+          <p className='text-gray-600 mt-6 md:text-center text-justify text-md'>Welcome to Lemarkz, your trusted destination for high-quality bakery and kitchen equipment. At Lemarkz, we are committed to delivering excellence in every product, ensuring that your culinary creations are powered by reliability and innovation.</p>
         </div>
       </div>
 
       <section className="w-full bg-white py-10">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center font-poppins">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 items-center font-poppins">
             <div className="relative flex flex-col items-center md:items-center space-y-4">
               <img
                 src={about}
                 alt="Mixer"
-                className="h-110 object-cover"
+                className="h-85 md:h-110 object-cover"
               />
             </div>
             <div>

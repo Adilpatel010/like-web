@@ -129,8 +129,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="bg-primary text-center py-3 md:py-6 text-white text-sm">
-        © {new Date().getFullYear()} MD Agl. All rights reserved.
-                {/* © {new Date().getFullYear()} Lemarkz Industries Kitchen Equipments. All rights reserved. */}
+        © {new Date().getFullYear()} Lemarkz Industries Kitchen Equipments. All rights reserved.
       </div>
 
     </footer>

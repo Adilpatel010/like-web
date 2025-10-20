@@ -6,7 +6,7 @@ import Contact from '../pages/contact/index'
 import { Route, Routes } from 'react-router-dom'
 import HeroSection from '../pages/home/index'
 import ViewProduct from '../pages/viewproducts/ViewProduct'
-import ViewOven from '../pages/viewpopularproducts/ViewOven'
+import ViewPopularProduct from '../pages/home/ViewPopularProduct'
 
 const ClientRoutes = () => {
     return (
@@ -16,8 +16,8 @@ const ClientRoutes = () => {
                     <Route index element={<HeroSection />} />
                     <Route path='/about' element={<About />} />
                     <Route path='/products' element={<Products />} />
-                    <Route path='/viewoven' element={<ViewOven />} />
-                    <Route path='/viewproduct' element={<ViewProduct />} />
+                    <Route path='/viewpopularproduct/:category' element={<ViewPopularProduct />} />
+                    <Route path='/viewproduct/:id' element={<ViewProduct />} />
                     <Route path='/contact' element={<Contact />} />
                 </Route>
             </Routes>

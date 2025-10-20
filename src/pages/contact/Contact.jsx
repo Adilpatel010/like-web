@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className='py-10 font-poppins'>
             <div className="container">
-                <h2 className="text-xl md:w-130 flex justify-center items-center md:text-3xl font-medium text-white p-3 rounded-lg bg-primary mb-17">
+                <h2 className="text-xl md:w-130 flex justify-center items-center md:text-3xl font-medium text-white p-3 rounded-tl-2xl rounded-br-2xl bg-primary mb-17">
                     Kadiwala Group Of Companies
                 </h2>
 

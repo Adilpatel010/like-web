@@ -16,15 +16,19 @@
   }
 }
 
-.custom-scrollbar::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
+/* Hide horizontal scrollbar for all browsers but still allow scroll */
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
 }
 
-.custom-scrollbar {
-  scrollbar-width: none;
+.scroll-hidden {
   -ms-overflow-style: none;
+  /* IE & Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 
 @keyframes float {
   0% {
@@ -43,4 +47,3 @@
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
-

@@ -4,8 +4,8 @@ const Catalog = () => {
     return (
         <div>
             {/* Catalogue Download */}
-            <div className="px-4 py-20 bg-[#ab4b44] font-poppins">
-                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-10 px-7">
+            <div className="py-20 bg-[#ab4b44] font-poppins">
+                <div className="container grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-10">
                     {/* Title */}
                     <h2 className="text-white text-2xl font-medium md:text-4xl text-center md:text-left md:-mr-20">
                         Download Our Products Catalog

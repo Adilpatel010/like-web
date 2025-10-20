@@ -118,7 +118,7 @@ const Client = () => {
                 </div>
 
                 {/* Desktop Grid */}
-                <div className="hidden md:grid md:grid-cols-3 gap-6">
+                <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {/* Card 1 */}
                     <div className="bg-white rounded-2xl shadow-lg p-6 text-left hover:shadow-2xl transition duration-300">
                         <div className="flex items-start gap-4 mb-4">

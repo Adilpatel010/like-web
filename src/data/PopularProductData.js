@@ -1,0 +1,60 @@
+const PopularProductData = [
+    {
+        id: 1,
+        title: "OVENS",
+        dropdown: "Ovens",
+        description: "Premium quality equipment for efficient baking",
+        category: "oven",
+        img: "/src/assets/img/oven.png",
+    },
+    {
+        id: 2,
+        title: "MIXERS",
+        dropdown: "Mixers",
+        description: "Premium quality equipment for efficient baking",
+        category: "mixer",
+        img: "/src/assets/img/mixer.png",
+    },
+    {
+        id: 3,
+        title: "DOUGH SHEETER",
+        dropdown: "Dough Sheeter",
+        description: "Premium quality equipment for efficient baking",
+        category: "sheeter",
+        img: "/src/assets/img/DoughSheeter.png",
+    },
+    {
+        id: 4,
+        title: "DOUGH SERIES",
+        dropdown: "Dough Series",
+        description: "Premium quality equipment for efficient baking",
+        category: "doughseries",
+        img: "/src/assets/img/DoughRounder.png",
+    },
+    {
+        id: 5,
+        title: "KITCHEN EQUIPMENTS",
+        dropdown: "Kitchen Equipments",
+        description: "Premium quality equipment for efficient baking",
+        category: "kitchenequipments",
+        img: "https://lemarkzindustries.com/admin/images/1694005464Fryer.png",
+    },
+    {
+        id: 6,
+        title: "SHOWCASES",
+        dropdown: "Showcases",
+        description: "Premium quality equipment for efficient baking",
+        category: "showcases",
+        img: "https://lemarkzindustries.com/admin/images/1694005639Counter.png",
+    },
+    {
+        id: 7,
+        title: "ALL ACCESSORIES",
+        dropdown: "All Accessories",
+        description: "Premium quality equipment for efficient baking",
+        category: "all",
+        img: "https://lemarkzindustries.com/admin/images/1694008357Temp_Controller-removebg-preview.png",
+    },
+];
+
+export default PopularProductData;
