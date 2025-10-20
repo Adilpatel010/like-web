@@ -5,7 +5,7 @@ const PopularProductData = [
         dropdown: "Ovens",
         description: "Premium quality equipment for efficient baking",
         category: "oven",
-        img: "/src/assets/img/oven.png",
+        img: "https://lemarkzindustries.com/admin/images/1735985028RQL-90.png",
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const PopularProductData = [
         dropdown: "Mixers",
         description: "Premium quality equipment for efficient baking",
         category: "mixer",
-        img: "/src/assets/img/mixer.png",
+        img: "https://lemarkzindustries.com/admin/images/1694000762Spiral%20Mixer.png",
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const PopularProductData = [
         dropdown: "Dough Sheeter",
         description: "Premium quality equipment for efficient baking",
         category: "sheeter",
-        img: "/src/assets/img/DoughSheeter.png",
+        img: "https://lemarkzindustries.com/admin/images/1694004701Dough%20Sheeter.png",
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const PopularProductData = [
         dropdown: "Dough Series",
         description: "Premium quality equipment for efficient baking",
         category: "doughseries",
-        img: "/src/assets/img/DoughRounder.png",
+        img: "https://lemarkzindustries.com/admin/images/1694005155Dough%20Rounder.png",
     },
     {
         id: 5,
