@@ -4,9 +4,9 @@ import PopularProductData from "../../data/PopularProductData";
 const Products = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white font-poppins">
       <div className="container text-center">
-        <h2 className="inline-block text-3xl font-semibold text-white bg-primary py-2 px-6 rounded-tl-2xl rounded-br-2xl mb-10 capitalize">Our Products Categories</h2>
+        <h2 className="inline-block text-xl md:text-3xl font-semibold text-white bg-primary py-2 px-6 rounded-tl-2xl rounded-br-2xl mb-10 capitalize">Our Products Categories</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {PopularProductData.map((item) => (

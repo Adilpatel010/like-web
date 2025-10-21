@@ -90,9 +90,9 @@
 // }
 
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import PopularProductData from '../../data/PopularProductData'
@@ -102,6 +102,33 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 export default function PopularProducts() {
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
+  const [isReverse, setIsReverse] = useState(false);
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    if (!swiperRef.current) return;
+    const swiper = swiperRef.current;
+
+    // Custom autoplay logic
+    const autoplay = setInterval(() => {
+      if (isReverse) {
+        swiper.slidePrev();
+      } else {
+        swiper.slideNext();
+      }
+
+      // When swiper reaches end → reverse direction
+      if (swiper.isEnd) {
+        setIsReverse(true);
+      }
+      // When swiper reaches beginning → normal direction
+      if (swiper.isBeginning) {
+        setIsReverse(false);
+      }
+    }, 3000);
+
+    return () => clearInterval(autoplay);
+  }, [isReverse]);
 
   return (
     <section className="py-10 pb-25 font-poppins">
@@ -118,7 +145,7 @@ export default function PopularProducts() {
         {/* Swiper */}
         <div className="mt-12 relative">
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={24}
             slidesPerView={1}
             breakpoints={{
@@ -129,11 +156,18 @@ export default function PopularProducts() {
               prevEl: ".custom-prev",
               nextEl: ".custom-next",
             }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            loop={false} // important — we’re handling direction manually
             onSlideChange={(swiper) => {
               setIsBeginning(swiper.isBeginning);
               setIsEnd(swiper.isEnd);
             }}
             onSwiper={(swiper) => {
+              swiperRef.current = swiper;
               setIsBeginning(swiper.isBeginning);
               setIsEnd(swiper.isEnd);
             }}
@@ -174,7 +208,7 @@ export default function PopularProducts() {
             <button
               className={`custom-prev w-12 h-12 flex items-center justify-center text-2xl rounded-full shadow-md transition-all duration-300
             ${isBeginning
-                  ? "cursor-not-allowed border text-gray-700 border-primary bg-[#f0d9d7]"
+                  ? "cursor-not-allowed border text-white border-primary bg-[#DCA9A6]"
                   : "cursor-pointer text-white border border-primary bg-primary hover:bg-transparent hover:text-primary"
                 }`}
             >
@@ -183,7 +217,7 @@ export default function PopularProducts() {
             <button
               className={`custom-next w-12 h-12 flex items-center justify-center text-2xl rounded-full shadow-md transition-all duration-300
             ${isEnd
-                  ? "cursor-not-allowed border border-primary bg-[#f0d9d7]"
+                  ? "cursor-not-allowed border text-white border-primary bg-[#DCA9A6]"
                   : "cursor-pointer text-white border border-primary bg-primary hover:bg-transparent hover:text-primary"
                 }`}
             >
