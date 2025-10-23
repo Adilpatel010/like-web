@@ -1,89 +1,9 @@
-// import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay, Pagination } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/pagination";
-
-// export default function HeroSection() {
-//     window.scrollTo({ top: 0, behavior: "smooth" });
-//     const slides = [
-//         "/src/assets/img/banner/sd.jpg",
-//         "/src/assets/img/banner/ws.jpg",
-//         "/src/assets/img/banner/rr.jpg",
-//         "/src/assets/img/banner/bb.jpg",
-//         "/src/assets/img/banner/jj.jpg",
-//     ];
-
-//     return (
-//         <div className="w-full mx-auto">
-//             <Swiper
-//                 modules={[Autoplay, Pagination]}
-//                 autoplay={{ delay: 3000, disableOnInteraction: false }}
-//                 pagination={{ clickable: true }}
-//                 loop={true}
-//                 speed={1000}
-//                 className="object-cover"
-//             >
-//                 {slides.map((src, i) => (
-//                     <SwiperSlide key={i}>
-//                         <img
-//                             src={src}
-//                             alt={`slide-${i}`}
-//                             className="w-full h-[175px] md:h-[470px] object-contain md:object-fill"
-//                         />
-//                     </SwiperSlide>
-//                 ))}
-//             </Swiper>
-//         </div>
-//     );
-// }
-
-
-
 import React, { useState, useEffect } from 'react';
 import { Award, Calendar, Download } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
-  // const heroCards = [
-  //   {
-  //     badge: 'Hydraluxe Aquastar',
-  //     title: 'Premium HydraFacial device master in',
-  //     highlight: 'Skin science',
-  //     subtitle: 'Best premium HydraFacial device.',
-  //     desc: 'Premium HydraFacial device redefines skincare. Featuring an advanced analyzer for real-time results, high-quality probes for anti-aging and brightening treatment, and superior exfoliation, it delivers the best HydraFacial treatment for a radiant, healthy complexion.',
-  //     image: 'https://lemarkzindustries.com/admin/images/1735985028RQL-90.png',
-  //     gradient: 'from-[#FBF4DB] via-[#f5ead0] to-[#ebe0c5]'
-  //   },
-  //   {
-  //     badge: 'Epiglow',
-  //     title: 'Premium Diode',
-  //     highlight: 'Diode & Pico',
-  //     subtitle: 'Best Pico + diode laser, Pico + diode supplier...',
-  //     desc: 'Introducing Epiglow laser, the best pico and diode combination laser available. Engineered with a powerful short pulse width and an advanced cooling system, this versatile platform delivers exceptional results across more than 13 key skin and hair treatments.',
-  //     image: 'https://lemarkzindustries.com/admin/images/1694000762Spiral%20Mixer.png',
-  //     gradient: 'from-[#FBF4DB] via-[#f5ead0] to-[#ebe0c5]'
-  //   },
-  //   {
-  //     badge: 'Your Clinic partner',
-  //     title: 'Your Trusted Partner: Complete Aesthetic',
-  //     highlight: 'Devices & Consumables',
-  //     subtitle: 'Best aesthetic products suppliers, best laser equipments supplier.',
-  //     desc: 'Unilog provide a complete array of aesthetic devices and essential consumables. We pride ourselves on being the best aesthetic products suppliers and a one-stop solution for new clinic start-ups, ensuring you have premium tools and supplies to deliver exceptional client experiences.',
-  //     image: 'https://lemarkzindustries.com/admin/images/1694431200Floor%20Model%20Sheeter%20650.png',
-  //     gradient: 'from-[#FBF4DB] via-[#f5ead0] to-[#ebe0c5]'
-  //   },
-  //   {
-  //     badge: 'FDA Approved Technology',
-  //     title: "India's Most Advanced",
-  //     highlight: 'PicoSecond Laser',
-  //     subtitle: 'Faster. Safer. More Effective.',
-  //     desc: "Boost your clinic's results with cutting-edge laser technology trusted by global dermatologists.",
-  //     image: 'https://lemarkzindustries.com/admin/images/1694005155Dough%20Rounder.png',
-  //     gradient: 'from-[#FBF4DB] via-[#f5ead0] to-[#ebe0c5]'
-  //   }
-  // ];
 
   const heroCards = [
     {
@@ -137,8 +57,8 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-full font-poppins max-w-[2000px] mx-auto mt-2">
-      <div className="flex flex-row gap-2 sm:gap-3 md:gap-4 h-[calc(100vh-70px)] sm:h-[calc(100vh-90px)] md:h-[calc(100vh-100px)] overflow-hidden p-2">
+    <div className="w-full font-poppins max-w-[2000px] mx-auto lg:mt-2">
+      <div className="flex flex-row gap-2 sm:gap-3 md:gap-4 h-[calc(100vh-100px)] sm:h-[calc(100vh-90px)] md:h-[calc(100vh-125px)] overflow-hidden p-2">
         {heroCards.map((card, index) => (
           <div
             key={index}
@@ -189,8 +109,8 @@ const HeroSection = () => {
 
                   {/* Buttons */}
                   <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 mt-1 sm:mt-2 animate-slideInLeft animation-delay-200">
-                    <a
-                      href="#book-demo"
+                    <Link
+                      to="/contact"
                       className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-3 lg:px-6 
                         bg-[#AB2E26] text-white font-semibold rounded-md sm:rounded-lg text-xs sm:text-sm md:text-base
                         border-2 border-[#AB2E26] transition-all duration-300
@@ -198,9 +118,9 @@ const HeroSection = () => {
                     >
                       <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                       <span className="whitespace-nowrap">Book Free Demo</span>
-                    </a>
-                    <a
-                      href="./brochure.pdf"
+                    </Link>
+                    <Link
+                      to="/Lemarks-Catalogue.pdf" target="_blank"
                       className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-3 lg:px-6
                         bg-transparent text-[#AB2E26] font-semibold rounded-md sm:rounded-lg text-xs sm:text-sm md:text-base
                         border-2 border-[#AB2E26] transition-all duration-300
@@ -208,7 +128,7 @@ const HeroSection = () => {
                     >
                       <Download className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                       <span className="whitespace-nowrap">Download Brochure</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 

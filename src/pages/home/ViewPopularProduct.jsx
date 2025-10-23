@@ -16,8 +16,6 @@ export default function ViewPopularProduct() {
                 <h2 className="inline-block text-3xl font-semibold text-white bg-primary py-2 px-6 rounded-tl-2xl rounded-br-2xl capitalize">
                     {category.replace(/-/g, " ")} Products
                 </h2>
-
-
                 <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10">
                     {filteredProducts.length > 0 ? (
                         filteredProducts.map((item) => (

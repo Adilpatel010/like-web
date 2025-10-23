@@ -8,7 +8,7 @@ const Catalog = () => {
                 <div className="container grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-10">
                     {/* Title */}
                     <h2 className="text-white text-2xl font-medium md:text-4xl text-center md:text-left md:-mr-20">
-                        Download Our Products Catalog
+                        Download Our Products Catalogue
                     </h2>
 
                     {/* Button (visible on all screens, auto adjust position) */}

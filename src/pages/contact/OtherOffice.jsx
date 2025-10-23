@@ -32,12 +32,13 @@ const OtherOffice = () => {
             {/* Address */}
             <p className="font-semibold underline text-primary mb-2">ADDRESS:</p>
             <div className="flex items-start mb-4 text-gray-700">
-              <MapPin className="w-13 h-4 text-primary mt-1 mr-2" />
+              <MapPin className="w-4 h-4 text-primary mt-1 mr-2 flex-shrink-0" />
               <p>
-                Amta Road, Kabarpara, Behind Central Nursing Home, Opp. St Ann's Day School,
-                Bankra, Howrah, West Bengal - 711403 (India)
+                Amta Road, Kabarpara, Behind Central Nursing Home, Opp. St. Ann's Day School,
+                Bankra, Howrah, West Bengal – 711403 (India)
               </p>
             </div>
+
 
             {/* Email */}
             <p className="font-semibold underline text-primary mb-2">EMAIL-ID:</p>
@@ -89,7 +90,7 @@ const OtherOffice = () => {
             {/* Address */}
             <p className="font-semibold underline text-primary mb-2">ADDRESS:</p>
             <div className="flex items-start mb-4 text-gray-700">
-              <MapPin className="w-13 h-4 text-primary mt-1 mr-2" />
+              <MapPin className="w-4 h-4 text-primary mt-1 mr-2 flex-shrink-0" />
               <p>
                 Bhagat Estate, Sanand Sarkhej Road, Near Sarkhej Railway Crossing, Sarkhej, Ahmedabad, Gujarat - 382 210 (India)
               </p>
@@ -152,7 +153,7 @@ const OtherOffice = () => {
             {/* Address */}
             <p className="font-semibold underline text-primary mb-2">ADDRESS:</p>
             <div className="flex items-start mb-4 text-gray-700">
-              <MapPin className="w-13 h-4 text-primary mt-1 mr-2" />
+              <MapPin className="w-4 h-4 text-primary mt-1 mr-2 flex-shrink-0" />
               <p>
                 Shop No.24, S.No. 229/1, Milkat No.4357 National Highway No.41, Majadar, Taluk-Vadgam District - Banaskantha. Gujarat - 385 210 (India)
               </p>
@@ -213,7 +214,7 @@ const OtherOffice = () => {
             {/* Address */}
             <p className="font-semibold underline text-primary mb-2">ADDRESS:</p>
             <div className="flex items-start mb-4 text-gray-700">
-              <MapPin className="w-13 h-4 text-primary mt-1 mr-2" />
+              <MapPin className="w-4 h-4 text-primary mt-1 mr-2 flex-shrink-0" />
               <p>
                 Unit No.25, Bhaskar Layout, Anjanapura Main Road, Avalahalli, Bengaluru, Karnataka - 560 062 (India)
               </p>

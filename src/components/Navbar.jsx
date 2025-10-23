@@ -313,8 +313,9 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "../assets/img/lemarks_logo1.png";
 // import { FaWhatsapp } from "react-icons/fa6";
 import PopularProductData from "../data/PopularProductData";
-import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FiMessageSquare } from "react-icons/fi";
+import { LuMessageCircleMore } from "react-icons/lu";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -349,14 +350,16 @@ export default function Navbar() {
                 <Link
                   to="#"
                   onClick={() => window.open("https://www.instagram.com/lema_rkz", "_blank")}
-                  className="hover:text-pink-500 transition-colors duration-300"
+                  className="hover:text-secondary transition-colors duration-300"
                 >
                   <FaInstagram />
                 </Link>
 
 
-                <Link to="/" className="hover:text-blue-400 transition-colors duration-300">
-                  <FaLinkedin />
+                <Link
+                  to="sms:+919773233149" target="_blank"
+                  className="hover:text-secondary transition-colors duration-300">
+                  <LuMessageCircleMore />
                 </Link>
 
                 <Link
@@ -364,7 +367,7 @@ export default function Navbar() {
                   onClick={() =>
                     window.open("https://wa.me/9773233149", "_blank")
                   }
-                  className="hover:text-green-400 transition-colors duration-300"
+                  className="hover:text-secondary transition-colors duration-300"
                 >
                   <FaWhatsapp />
                 </Link>
@@ -538,7 +541,7 @@ export default function Navbar() {
               </div>
 
               {/* Catalogue Button */}
-              <div className="hidden lg:block">
+              {/* <div className="hidden lg:block">
                 <a href="/Lemarks-Catalogue.pdf" target="_blank" rel="noopener noreferrer">
                   <button className="relative overflow-hidden group text-sm cursor-pointer text-white px-6 py-3 rounded-3xl uppercase font-medium bg-primary">
                     <span className="font-poppins relative z-10 transition-colors duration-500 group-hover:text-primary tracking-wide">
@@ -547,6 +550,13 @@ export default function Navbar() {
                     <span className="absolute left-0 top-0 h-full w-0 bg-[#FFF2BF] transition-all duration-500 ease-in-out group-hover:w-full outline-none" />
                   </button>
                 </a>
+              </div> */}
+              <div class="btn-container">
+                <Link to="/Lemarks-Catalogue.pdf" target="_blank" rel="noopener noreferrer">
+                  <button class="btn-primary hidden lg:block">
+                    <span>Download Catalogue</span>
+                  </button>
+                </Link>
               </div>
 
               {/* Hamburger Menu */}
@@ -793,7 +803,7 @@ export default function Navbar() {
                     Contact Us
                   </NavLink>
 
-                  <div className="px-3 py-3">
+                  {/* <div className="px-3 py-3">
                     <a href="/Lemarks-Catalogue.pdf" target="_blank" rel="noopener noreferrer">
                       <motion.button
                         whileHover={{ scale: 1.02 }}
@@ -806,6 +816,21 @@ export default function Navbar() {
                         <span className="absolute left-0 top-0 h-full w-0 bg-[#FFF2BF] transition-all duration-500 ease-in-out group-hover:w-full" />
                       </motion.button>
                     </a>
+                  </div> */}
+                  <div className="px-3 py-4 btn-container">
+                    <Link
+                      to="/Lemarks-Catalogue.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="btn-primary w-full text-center"
+                      >
+                        <span>Download Catalogue</span>
+                      </motion.button>
+                    </Link>
                   </div>
                 </motion.div>
               </motion.div>

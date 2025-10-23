@@ -9,7 +9,7 @@ const Welcome = () => {
         <>
             <section className="w-full bg-white">
                 <div className="container">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center font-poppins py-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center font-poppins py-8">
                         {/* Left Content */}
                         <div>
                             <h3 className="text-primary font-bold text-2xl mt-4">Welcome To</h3>
@@ -50,12 +50,12 @@ const Welcome = () => {
                         </div>
 
                         {/* Right Images */}
-                        <div className="relative flex flex-col items-center md:items-center space-y-4">
+                        <div className="relative flex flex-col items-center md:items-end space-y-4">
                             {/* Top Image */}
                             <img
                                 src={about}
                                 alt="Mixer"
-                                className="h-100 object-cover"
+                                className="h-130 w-auto object-cover"
                             />
                         </div>
                     </div>

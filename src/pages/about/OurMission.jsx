@@ -26,6 +26,7 @@
 import React from 'react';
 
 const OurMission = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   return (
     <section className="w-full py-20 container font-poppins space-y-7">
 
