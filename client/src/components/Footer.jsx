@@ -11,7 +11,7 @@ export default function Footer() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1000) {
+      if (window.scrollY > 1200) {
         setShowBtn(true);
       } else {
         setShowBtn(false);
