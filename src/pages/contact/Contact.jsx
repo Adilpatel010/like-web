@@ -13,7 +13,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="relative bg-third border-2 border-primary rounded-xl p-6 transition-all duration-300 hover:shadow-xl">
                         <span className="absolute -top-4 left-6 bg-primary text-white text-sm font-semibold px-4 py-1 rounded-xl shadow">
-                            Other Office
+                            Main Office
                         </span>
 
                         <div className="flex items-center mb-4 mt-2">

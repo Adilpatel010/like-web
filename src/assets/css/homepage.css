@@ -16,6 +16,16 @@
   }
 }
 
+/* scrollbar */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .scroll-hidden {
   scrollbar-width: thin;
   scrollbar-color: #AB2E26 #f4f4f4;
@@ -32,7 +42,7 @@
 }
 
 .scroll-hidden::-webkit-scrollbar-thumb {
-  background-color:var(--color-primary);
+  background-color: var(--color-primary);
   border-radius: 8px;
   border: 2px solid #f4f4f4;
 }
@@ -41,7 +51,7 @@
   background-color: #8e221d;
 }
 
-
+/* hero section img animation */
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -58,4 +68,15 @@
 
 .animate-float {
   animation: float 4s ease-in-out infinite;
+}
+
+/* arrow icon animation */
+@keyframes upDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+.upDownAnimation {
+  animation: upDown 1.8s infinite ease-in-out;
 }

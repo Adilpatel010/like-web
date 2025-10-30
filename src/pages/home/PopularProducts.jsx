@@ -161,7 +161,7 @@ export default function PopularProducts() {
               disableOnInteraction: false,
               pauseOnMouseEnter: true,
             }}
-            loop={false} // important — we’re handling direction manually
+            loop={false}
             onSlideChange={(swiper) => {
               setIsBeginning(swiper.isBeginning);
               setIsEnd(swiper.isEnd);

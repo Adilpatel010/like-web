@@ -1,11 +1,26 @@
 import { Link, NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 import logo from "../assets/img/lemarks_logo.png";
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram, ChevronsUp } from 'lucide-react';
 import { FaWhatsapp } from "react-icons/fa";
 import { LuMessageCircleMore } from "react-icons/lu";
 import PopularProductData from "../data/PopularProductData";
 
 export default function Footer() {
+  const [showBtn, setShowBtn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1000) {
+        setShowBtn(true);
+      } else {
+        setShowBtn(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <footer className="bg-secondary font-poppins">
       <div className="container">
@@ -25,7 +40,7 @@ export default function Footer() {
               <Link
                 to="https://www.instagram.com/lema_rkz"
                 target="_blank"
-                className="flex items-center justify-center w-9 h-9 border border-primary rounded-full text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:border-primary shadow-sm"
+                className="flex items-center justify-center w-9 h-9 border border-primary rounded-full text-white bg-primary transition-all duration-300 hover:bg-transparent hover:text-primary hover:border-primary shadow-sm"
               >
                 <Instagram className="w-5 h-5" />
               </Link>
@@ -33,13 +48,13 @@ export default function Footer() {
               <Link
                 to="https://wa.me/9773233149"
                 target="_blank"
-                className="flex items-center justify-center w-9 h-9 border border-primary rounded-full text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:border-primary shadow-sm"
+                className="flex items-center justify-center w-9 h-9 border border-primary rounded-full text-white bg-primary transition-all duration-300 hover:bg-transparent hover:text-primary hover:border-primary shadow-sm"
               >
                 <FaWhatsapp className="w-5 h-5" />
               </Link>
               <Link
                 to="sms:+919773233149" target="_blank"
-                className="flex items-center justify-center w-9 h-9 border border-primary rounded-full text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:border-primary shadow-sm"
+                className="flex items-center justify-center w-9 h-9 border border-primary rounded-full text-white bg-primary transition-all duration-300 hover:bg-transparent hover:text-primary hover:border-primary shadow-sm"
               >
                 <LuMessageCircleMore className="w-5 h-5" />
               </Link>
@@ -143,11 +158,18 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="bg-primary text-center py-3 md:py-6 text-white text-sm">
+      <div className="bg-primary px-6 text-center py-3 md:py-6 text-white text-sm">
         © {new Date().getFullYear()} Lemarkz Industries Kitchen Equipments. All rights reserved.
       </div>
 
+      {showBtn && (
+        <div
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="fixed bottom-5 right-5 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center cursor-pointer shadow-lg transition-all z-50 opacity-100 animate-[fadeIn_0.3s_ease-in-out]"
+        >
+          <ChevronsUp className="w-6 h-6 upDownAnimation" />
+        </div>
+      )}
     </footer>
   );
 }

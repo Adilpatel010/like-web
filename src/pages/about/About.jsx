@@ -6,7 +6,7 @@ import "swiper/css/autoplay";
 
 const About = () => {
   const images = [
-    "https://lemarkzindustries.com/admin/images/1735985028RQL-90.png",
+    "https://lemarkzindustries.com/admin/images/16939099693%20Deck%2012%20Tray%20Gas%20Oven.png",
     "https://lemarkzindustries.com/admin/images/1694000762Spiral%20Mixer.png",
     "https://lemarkzindustries.com/admin/images/1694004701Dough%20Sheeter.png",
     "https://lemarkzindustries.com/admin/images/1694005155Dough%20Rounder.png",
@@ -41,7 +41,7 @@ const About = () => {
                       <img
                         src={src}
                         alt={`Slide ${idx}`}
-                        className="w-[300px] h-[250px] md:w-[300px] md:h-[320px] object-cover rounded-lg transition-transform duration-500 hover:scale-105 mx-auto"
+                        className="w-[300px] h-[300px] md:w-[300px] md:h-[320px] object-cover rounded-lg transition-transform duration-500 hover:scale-105 mx-auto"
                       />
                     </SwiperSlide>
                   ))}
