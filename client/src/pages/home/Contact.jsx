@@ -10,7 +10,7 @@ const Contact = () => {
                 <div className='px-4 py-10 bg-white md:px-11 font-poppins'>
                     <h2 className='text-center text-2xl md:text-4xl font-bold text-primary'>Want to reach out to us?</h2>
                     <div className="mt-2 w-20 h-1 bg-primary mx-auto rounded-full"></div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 md:px-25">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 md:px-25">
                         <div className='bg-white rounded-2xl shadow-lg p-6 text-left hover:shadow-2xl transition duration-300 hover:scale-105 border-2 border-[#f7bab5]'>
                             <div className='flex justify-center'>
                                 <Phone className='w-20 h-8 text-primary ' />

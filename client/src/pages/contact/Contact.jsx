@@ -1,3 +1,4 @@
+import { Mail, MapPin, Phone } from 'lucide-react';
 import React from 'react'
 
 const Contact = () => {
@@ -5,51 +6,68 @@ const Contact = () => {
     return (
         <div className='py-10 font-poppins'>
             <div className="container">
-                <h2 className="text-xl md:w-130 flex justify-center items-center md:text-3xl font-medium text-white p-3 rounded-lg bg-primary mb-17">
+                <h2 className="text-xl md:w-130 flex justify-center items-center md:text-3xl font-medium text-white p-3 rounded-tl-2xl rounded-br-2xl bg-primary mb-17">
                     Kadiwala Group Of Companies
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="relative bg-third border-2 border-primary rounded-xl p-6 transition-all duration-300 hover:shadow-lg">
+                    <div className="relative bg-third border-2 border-primary rounded-xl p-6 transition-all duration-300 hover:shadow-xl">
                         <span className="absolute -top-4 left-6 bg-primary text-white text-sm font-semibold px-4 py-1 rounded-xl shadow">
                             Main Office
                         </span>
 
-                        <h3 className="text-lg md:text-2xl font-bold text-primary mb-2 mt-3">
-                            GENEVA ENTERPRISE PVT.LTD.
+                        <div className="flex items-center mb-4 mt-2">
+                            <h3 className="text-xl md:text-2xl font-bold text-primary">
+                                GENEVA ENTERPRISE PVT. LTD.
+                            </h3>
+                        </div>
+
+                        <h3 className="text-lg font-bold text-[#3b0603] mb-4">
+                            Mumbai, India
                         </h3>
 
-                        <h3 className='text-xl font-bold text-[#3b0603] mb-4'>Mumbai, India</h3>
-
+                        {/* Address */}
                         <p className="font-semibold underline text-primary mb-2">ADDRESS:</p>
-                        <p className="text-gray-700 mb-4">
-                            Plot No.D-339, T.T.C. Industrial Area, (Maharashtra Industrial
-                            Development Corporation), Thane Belapur Road, Turbhe, Navi Mumbai,
-                            Maharashtra - 400 705 (India)
-                        </p>
+                        <div className="flex items-start mb-4 text-gray-700">
+                            <MapPin className="w-4 h-4 text-primary mt-1 mr-2 flex-shrink-0" />
+                            <p>
+                                Plot No.D-339, T.T.C. Industrial Area, (Maharashtra Industrial Development Corporation), Thane Belapur Road, Turbhe, Navi Mumbai, Maharashtra - 400 705 (India)
+                            </p>
+                        </div>
 
+                        {/* Email */}
                         <p className="font-semibold underline text-primary mb-2">EMAIL-ID:</p>
-                        <a
-                            href="mailto:info@lemarkzindustries.com"
-                            className="text-gray-700 hover:text-primary block mb-4"
-                        >
-                            info@lemarkzindustries.com
-                        </a>
+                        <div className="flex items-center mb-4">
+                            <Mail className="w-4 h-4 text-primary mr-2" />
+                            <a
+                                href="mailto:info@lemarkzindustries.com"
+                                className="text-gray-700 hover:text-primary"
+                            >
+                                info@lemarkzindustries.com
+                            </a>
+                        </div>
 
+                        {/* Phone */}
                         <p className="font-semibold underline text-primary mb-2">PHONE NO:</p>
-                        <div className="space-y-1">
-                            <a
-                                href="tel:+919773233149"
-                                className="text-gray-700 hover:text-primary block"
-                            >
-                                +91-9773233149
-                            </a>
-                            <a
-                                href="tel:+917208658838"
-                                className="text-gray-700 hover:text-primary block"
-                            >
-                                +91-7208658838
-                            </a>
+                        <div className="space-y-2">
+                            <div className="flex items-center">
+                                <Phone className="w-4 h-4 text-primary mr-2" />
+                                <a
+                                    href="tel:+919773233149"
+                                    className="text-gray-700 hover:text-primary"
+                                >
+                                    +91-97732 33149
+                                </a>
+                            </div>
+                            <div className="flex items-center">
+                                <Phone className="w-4 h-4 text-primary mr-2" />
+                                <a
+                                    href="tel:+917208658838"
+                                    className="text-gray-700 hover:text-primary"
+                                >
+                                    +91-72086 58838
+                                </a>
+                            </div>
                         </div>
                     </div>
 

@@ -16,16 +16,42 @@
   }
 }
 
-.custom-scrollbar::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
+/* scrollbar */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
 }
 
-.custom-scrollbar {
-  scrollbar-width: none;
+.scrollbar-hidden {
   -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
+.scroll-hidden {
+  scrollbar-width: thin;
+  scrollbar-color: #AB2E26 #f4f4f4;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.scroll-hidden::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  border-radius: 8px;
+}
+
+.scroll-hidden::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  border: 2px solid #f4f4f4;
+}
+
+.scroll-hidden::-webkit-scrollbar-thumb:hover {
+  background-color: #8e221d;
+}
+
+/* hero section img animation */
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -44,3 +70,13 @@
   animation: float 4s ease-in-out infinite;
 }
 
+/* arrow icon animation */
+@keyframes upDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+.upDownAnimation {
+  animation: upDown 1.8s infinite ease-in-out;
+}

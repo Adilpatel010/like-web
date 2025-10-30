@@ -4,11 +4,12 @@ import about from '../../assets/img/about_img.png';
 import { NavLink } from "react-router-dom";
 
 const Welcome = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     return (
         <>
             <section className="w-full bg-white">
                 <div className="container">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-7 items-center font-poppins">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center font-poppins py-8">
                         {/* Left Content */}
                         <div>
                             <h3 className="text-primary font-bold text-2xl mt-4">Welcome To</h3>
@@ -35,7 +36,7 @@ const Welcome = () => {
                             {/* Button */}
                             <button>
                                 <NavLink to="/about">
-                                    <div className="cursor-pointer font-medium mt-6 group relative flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full overflow-hidden transition-colors duration-300 hover:bg-[#FFF2BF] hover:text-primary">
+                                    <div className="cursor-pointer font-medium mt-6 group relative flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-tl-2xl rounded-br-2xl overflow-hidden transition-colors duration-300 hover:bg-[#FFF2BF] hover:text-primary">
 
                                         <span className="tracking-wider transform transition-transform duration-300 group-hover:translate-x-5">
                                             READ MORE
@@ -49,12 +50,12 @@ const Welcome = () => {
                         </div>
 
                         {/* Right Images */}
-                        <div className="relative flex flex-col items-center md:items-center space-y-4">
+                        <div className="relative flex flex-col items-center md:items-end space-y-4">
                             {/* Top Image */}
                             <img
                                 src={about}
                                 alt="Mixer"
-                                className="h-100 object-cover"
+                                className="h-130 w-auto object-cover"
                             />
                         </div>
                     </div>
