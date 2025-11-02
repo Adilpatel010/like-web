@@ -20,7 +20,7 @@ const PopularProductData = [
         title: "DOUGH SHEETER",
         dropdown: "Dough Sheeter",
         description: "Premium quality equipment for efficient baking",
-        category: "sheeter",
+        category: "doughsheeter",
         img: "https://lemarkzindustries.com/admin/images/1694004701Dough%20Sheeter.png",
     },
     {
